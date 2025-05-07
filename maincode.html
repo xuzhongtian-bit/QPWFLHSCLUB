@@ -9,133 +9,238 @@
       font-family: sans-serif;
       background-color: #f7f7f7;
       padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .card {
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: scale(1.03);
-    }
-    .card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 15px;
-    }
-    .card h2 {
-      margin: 0 0 10px;
-      font-size: 18px;
-    }
-    .card p {
-      font-size: 14px;
-      color: #555;
-    }
-    .button {
-      margin-top: 10px;
-      display: inline-block;
-      padding: 8px 12px;
-      background-color: #007bff;
-      color: white;
-      border-radius: 6px;
-      text-align: center;
-      cursor: pointer;
-    }
-    body {
-      background-image: url('other photo/leaves.png.png');
+      background-image: url('other photo/leaves.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
 
-    .category-nav {
+    h1 {
       text-align: center;
-       margin-bottom: 30px;
+      margin-bottom: 30px;
     }
-  .category-button {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 8px 16px;
-    background-color: #28a745;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  .category-button:hover {
-     background-color: #218838;
-  }
+
+    .tab-container {
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid #ccc;
+      background-color: #f7f7f7;
+    }
+
+    .tab-button {
+      padding: 12px 20px;
+      background-color: #f7f7f7;
+      border: none;
+      border-right: 1px solid #ccc;
+      font-size: 16px;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .tab-button:last-child {
+      border-right: none;
+    }
+
+    .tab-button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .tab-button.active {
+      background-color: white;
+      border-bottom: 2px solid #007bff;
+      font-weight: bold;
+    }
+
+    .tab-content {
+      display: none;
+      margin-top: 30px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 16px;
+      padding-bottom: 10px;
+      position: relative;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card {
+      min-width: 250px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 12px;
+    }
+
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .scroll-fade {
+      position: relative;
+    }
+
+    .scroll-fade::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 80px;
+      height: 100%;
+      background: linear-gradient(to right, rgba(247,247,247,0), rgba(247,247,247,1));
+      pointer-events: none;
+    }
+
+    .details-link {
+      display: inline-block;
+      margin-top: 10px;
+      text-align: right;
+      float: right;
+      margin-right: 10px;
+      font-size: 14px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .details-link:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
 
-<h1>🏫 学校社团展示平台
-  <div class="category-nav">
-    <a href="c-type.html" class="category-button">C类社团</a>
-    <a href="a-type.html" class="category-button">A类社团</a>
-    <a href="s-type.html" class="category-button">S类社团</a>
-  </div>
-</h1>
+<h1>🏫 学校社团展示平台</h1>
+<div class="tab-container">
+  <button class="tab-button active" data-target="c">C类社团</button>
+  <button class="tab-button" data-target="a">A类社团</button>
+  <button class="tab-button" data-target="s">S类社团</button>
+</div>
 
-<div class="grid" id="clubGrid">
-  <!-- JavaScript 会在这里插入卡片 -->
+<div id="c" class="tab-content active">
+  <div class="scroll-fade">
+    <div class="scroll-container">
+      <div class="card">
+        <img src="club photo/Codecraft logo.jpg" alt="编程社">
+        <div class="card-content">
+          <h2>编程社</h2>
+          <p>探索前沿科技，参与开发项目。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?science" alt="科学社">
+        <div class="card-content">
+          <h2>科学社</h2>
+          <p>动手实验，激发科学兴趣。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="c-type.html" class="details-link">查看详情 &gt;</a>
+</div>
+
+<div id="a" class="tab-content">
+  <div class="scroll-fade">
+    <div class="scroll-container">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?literature" alt="文学社">
+        <div class="card-content">
+          <h2>文学社</h2>
+          <p>阅读与写作爱好者的聚集地。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?history" alt="历史社">
+        <div class="card-content">
+          <h2>历史社</h2>
+          <p>回顾历史长河，探索文化传承。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="a-type.html" class="details-link">查看详情 &gt;</a>
+</div>
+
+<div id="s" class="tab-content">
+  <div class="scroll-fade">
+    <div class="scroll-container">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?dance" alt="舞蹈社">
+        <div class="card-content">
+          <h2>舞蹈社</h2>
+          <p>释放青春活力，舞动精彩人生。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x200/?music" alt="音乐社">
+        <div class="card-content">
+          <h2>音乐社</h2>
+          <p>热爱旋律，演奏梦想。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="s-type.html" class="details-link">查看详情 &gt;</a>
+</div>
+
+<div class="footer">
+  <p>本平台由编程社开发维护，数据源于学生社团自报信息。</p>
+  <p>© 2025 校园社团展示平台 - 版权所有</p>
 </div>
 
 <script>
-  const clubs = [
-    {
-      name: "编程社",
-      description: "探索前沿科技，参与各类科技竞赛与项目开发。",
-      image: "club photo/Codecraft logo.jpg"
-    },
-    {
-      name: "文学社",
-      description: "爱好写作与阅读的同学们的聚集地。",
-      image: "https://source.unsplash.com/400x200/?books"
-    },
-    {
-      name: "摄影社",
-      description: "用镜头记录生活中的每一个精彩瞬间。",
-      image: "https://source.unsplash.com/400x200/?photography"
-    },
-    {
-      name: "舞蹈社",
-      description: "展示青春活力，参与校内外演出。",
-      image: "https://source.unsplash.com/400x200/?dance"
-    }
-  ];
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const tabContents = document.querySelectorAll(".tab-content");
 
-  const container = document.getElementById("clubGrid");
+  tabButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      tabButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
 
-  clubs.forEach(club => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
-      <img src="${club.image}" alt="${club.name}">
-      <div class="card-content">
-        <h2>${club.name}</h2>
-        <p>${club.description}</p>
-        <div class="button">了解更多</div>
-      </div>
-    `;
-    container.appendChild(card);
+      const target = btn.getAttribute("data-target");
+      tabContents.forEach(tc => {
+        tc.classList.remove("active");
+        if (tc.id === target) {
+          tc.classList.add("active");
+        }
+      });
+    });
   });
 </script>
 
