@@ -57,11 +57,35 @@
       text-align: center;
       cursor: pointer;
     }
+    .category-nav {
+      text-align: center;
+       margin-bottom: 30px;
+    }
+  .category-button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .category-button:hover {
+     background-color: #218838;
+  }
   </style>
 </head>
 <body>
 
-<h1>🏫 学校社团展示平台</h1>
+<h1>🏫 学校社团展示平台
+  <div class="category-nav">
+    <a href="c-type.html" class="category-button">C类社团</a>
+    <a href="a-type.html" class="category-button">A类社团</a>
+    <a href="s-type.html" class="category-button">S类社团</a>
+  </div>
+</h1>
 
 <div class="grid" id="clubGrid">
   <!-- JavaScript 会在这里插入卡片 -->
