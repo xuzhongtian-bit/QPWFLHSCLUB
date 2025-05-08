@@ -14,234 +14,186 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
     }
-
     h1 {
       text-align: center;
       margin-bottom: 30px;
     }
-
-    .tab-container {
+    .tab-buttons {
       display: flex;
       justify-content: center;
-      border-bottom: 2px solid #ccc;
-      background-color: #f7f7f7;
+      margin-bottom: 20px;
     }
-
     .tab-button {
-      padding: 12px 20px;
-      background-color: #f7f7f7;
+      flex: 1;
+      background-color: transparent;
       border: none;
-      border-right: 1px solid #ccc;
+      padding: 10px 0;
       font-size: 16px;
       cursor: pointer;
-      outline: none;
-      transition: background-color 0.2s ease;
+      color: #333;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s;
     }
-
-    .tab-button:last-child {
-      border-right: none;
-    }
-
-    .tab-button:hover {
-      background-color: #e0e0e0;
-    }
-
     .tab-button.active {
-      background-color: white;
-      border-bottom: 2px solid #007bff;
+      border-color: #333;
       font-weight: bold;
     }
-
     .tab-content {
       display: none;
-      margin-top: 30px;
     }
-
     .tab-content.active {
       display: block;
     }
-
+    .scroll-wrapper {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 10px;
+    }
     .scroll-container {
       display: flex;
-      overflow-x: auto;
-      gap: 16px;
-      padding-bottom: 10px;
-      position: relative;
+      gap: 20px;
+      padding: 10px 0;
+      animation: marquee 30s linear infinite;
     }
-
-    .scroll-container::-webkit-scrollbar {
-      display: none;
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
     }
-
+    .fade-left, .fade-right {
+      position: absolute;
+      top: 0;
+      width: 60px;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .fade-left {
+      left: 0;
+      background: linear-gradient(to right, #f7f7f7, rgba(247, 247, 247, 0));
+    }
+    .fade-right {
+      right: 0;
+      background: linear-gradient(to left, #f7f7f7, rgba(247, 247, 247, 0));
+    }
+    .view-more {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      background-color: #007bff;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+    }
     .card {
-      min-width: 250px;
+      flex: 0 0 auto;
+      width: 250px;
       background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       overflow: hidden;
-      flex-shrink: 0;
+      transition: transform 0.2s ease;
     }
-
+    .card:hover {
+      transform: scale(1.03);
+    }
     .card img {
       width: 100%;
-      height: 150px;
+      height: 160px;
       object-fit: cover;
     }
-
     .card-content {
-      padding: 12px;
+      padding: 15px;
     }
-
     .card h2 {
-      margin: 0 0 8px;
+      margin: 0 0 10px;
       font-size: 18px;
     }
-
     .card p {
-      margin: 0;
       font-size: 14px;
       color: #555;
     }
-
-    .scroll-fade {
-      position: relative;
-    }
-
-    .scroll-fade::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 80px;
-      height: 100%;
-      background: linear-gradient(to right, rgba(247,247,247,0), rgba(247,247,247,1));
-      pointer-events: none;
-    }
-
-    .details-link {
-      display: inline-block;
-      margin-top: 10px;
-      text-align: right;
-      float: right;
-      margin-right: 10px;
-      font-size: 14px;
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .details-link:hover {
-      text-decoration: underline;
-    }
-
-    .footer {
-      margin-top: 40px;
-      padding: 20px;
-      background-color: #f0f0f0;
+    .credit {
+      margin-top: 50px;
       text-align: center;
-      font-size: 14px;
-      color: #666;
-      border-radius: 10px;
+      font-size: 13px;
+      color: #888;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
 
 <h1>🏫 学校社团展示平台</h1>
-<div class="tab-container">
-  <button class="tab-button active" data-target="c">C类社团</button>
-  <button class="tab-button" data-target="a">A类社团</button>
-  <button class="tab-button" data-target="s">S类社团</button>
+<div class="tab-buttons">
+  <button class="tab-button active" data-tab="C">C类社团</button>
+  <button class="tab-button" data-tab="A">A类社团</button>
+  <button class="tab-button" data-tab="S">S类社团</button>
 </div>
 
-<div id="c" class="tab-content active">
-  <div class="scroll-fade">
-    <div class="scroll-container">
-      <div class="card">
-        <img src="club photo/Codecraft logo.jpg" alt="编程社">
-        <div class="card-content">
-          <h2>编程社</h2>
-          <p>探索前沿科技，参与开发项目。</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x200/?science" alt="科学社">
-        <div class="card-content">
-          <h2>科学社</h2>
-          <p>动手实验，激发科学兴趣。</p>
-        </div>
-      </div>
-    </div>
+<div id="C" class="tab-content active">
+  <div class="scroll-wrapper">
+    <div class="fade-left"></div>
+    <div class="fade-right"></div>
+    <div class="scroll-container"></div>
+    <a class="view-more" href="c-type.html">查看详情 →</a>
   </div>
-  <a href="c-type.html" class="details-link">查看详情 &gt;</a>
 </div>
-
-<div id="a" class="tab-content">
-  <div class="scroll-fade">
-    <div class="scroll-container">
-      <div class="card">
-        <img src="https://source.unsplash.com/400x200/?literature" alt="文学社">
-        <div class="card-content">
-          <h2>文学社</h2>
-          <p>阅读与写作爱好者的聚集地。</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x200/?history" alt="历史社">
-        <div class="card-content">
-          <h2>历史社</h2>
-          <p>回顾历史长河，探索文化传承。</p>
-        </div>
-      </div>
-    </div>
+<div id="A" class="tab-content">
+  <div class="scroll-wrapper">
+    <div class="fade-left"></div>
+    <div class="fade-right"></div>
+    <div class="scroll-container"></div>
+    <a class="view-more" href="a-type.html">查看详情 →</a>
   </div>
-  <a href="a-type.html" class="details-link">查看详情 &gt;</a>
 </div>
-
-<div id="s" class="tab-content">
-  <div class="scroll-fade">
-    <div class="scroll-container">
-      <div class="card">
-        <img src="https://source.unsplash.com/400x200/?dance" alt="舞蹈社">
-        <div class="card-content">
-          <h2>舞蹈社</h2>
-          <p>释放青春活力，舞动精彩人生。</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x200/?music" alt="音乐社">
-        <div class="card-content">
-          <h2>音乐社</h2>
-          <p>热爱旋律，演奏梦想。</p>
-        </div>
-      </div>
-    </div>
+<div id="S" class="tab-content">
+  <div class="scroll-wrapper">
+    <div class="fade-left"></div>
+    <div class="fade-right"></div>
+    <div class="scroll-container"></div>
+    <a class="view-more" href="s-type.html">查看详情 →</a>
   </div>
-  <a href="s-type.html" class="details-link">查看详情 &gt;</a>
-</div>
-
-<div class="footer">
-  <p>本平台由编程社开发维护，数据源于学生社团自报信息。</p>
-  <p>© 2025 校园社团展示平台 - 版权所有</p>
 </div>
 
 <script>
-  const tabButtons = document.querySelectorAll(".tab-button");
-  const tabContents = document.querySelectorAll(".tab-content");
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
 
-  tabButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      tabButtons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
 
-      const target = btn.getAttribute("data-target");
-      tabContents.forEach(tc => {
-        tc.classList.remove("active");
-        if (tc.id === target) {
-          tc.classList.add("active");
-        }
-      });
+      button.classList.add('active');
+      document.getElementById(button.dataset.tab).classList.add('active');
     });
   });
+
+  fetch('clubs.json')
+    .then(response => response.json())
+    .then(data => {
+      ['C', 'A', 'S'].forEach(type => {
+        const container = document.querySelector(`#${type} .scroll-container`);
+        container.innerHTML = '';
+        data[type].forEach(club => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <img src="${club.image}" alt="${club.name}">
+            <div class="card-content">
+              <h2>${club.name}</h2>
+              <p>${club.description}</p>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      });
+    });
 </script>
 
 </body>
