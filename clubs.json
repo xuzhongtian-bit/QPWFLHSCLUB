@@ -1,0 +1,133 @@
+{
+    "C": [
+      {
+        "name": "编程社",
+        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
+        "image": "club photo/Codecraft logo.jpg"
+      },
+      {
+        "name": "编程社",
+        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
+        "image": "club photo/Codecraft logo.jpg"
+      },
+      {
+        "name": "编程社",
+        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
+        "image": "club photo/Codecraft logo.jpg"
+      },
+      {
+        "name": "编程社",
+        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
+        "image": "club photo/Codecraft logo.jpg"
+      },
+      {
+        "name": "编程社",
+        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
+        "image": "club photo/Codecraft logo.jpg"
+      },
+      {
+        "name": "编程社",
+        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
+        "image": "club photo/Codecraft logo.jpg"
+      },
+      {
+        "name": "编程社",
+        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
+        "image": "club photo/Codecraft logo.jpg"
+      },
+      {
+        "name": "文学社",
+        "description": "爱好写作与阅读的同学们的聚集地。",
+        "image": "https://source.unsplash.com/400x200/?books"
+      }
+    ],
+    "A": [
+      {
+        "name": "摄影社",
+        "description": "用镜头记录生活中的每一个精彩瞬间。",
+        "image": "https://source.unsplash.com/400x200/?photography"
+      },
+      {
+        "name": "摄影社",
+        "description": "用镜头记录生活中的每一个精彩瞬间。",
+        "image": "https://source.unsplash.com/400x200/?photography"
+      },
+      {
+        "name": "摄影社",
+        "description": "用镜头记录生活中的每一个精彩瞬间。",
+        "image": "https://source.unsplash.com/400x200/?photography"
+      },
+      {
+        "name": "摄影社",
+        "description": "用镜头记录生活中的每一个精彩瞬间。",
+        "image": "https://source.unsplash.com/400x200/?photography"
+      },
+      {
+        "name": "摄影社",
+        "description": "用镜头记录生活中的每一个精彩瞬间。",
+        "image": "https://source.unsplash.com/400x200/?photography"
+      },
+      {
+        "name": "摄影社",
+        "description": "用镜头记录生活中的每一个精彩瞬间。",
+        "image": "https://source.unsplash.com/400x200/?photography"
+      },
+      {
+        "name": "摄影社",
+        "description": "用镜头记录生活中的每一个精彩瞬间。",
+        "image": "https://source.unsplash.com/400x200/?photography"
+      },
+      {
+        "name": "摄影社",
+        "description": "用镜头记录生活中的每一个精彩瞬间。",
+        "image": "https://source.unsplash.com/400x200/?photography"
+      },
+      {
+        "name": "舞蹈社",
+        "description": "展示青春活力，参与校内外演出。",
+        "image": "https://source.unsplash.com/400x200/?dance"
+      }
+    ],
+    "S": [
+      {
+        "name": "机器人社",
+        "description": "设计和制作机器人，参与科技挑战赛。",
+        "image": "https://source.unsplash.com/400x200/?robot"
+      },
+      {
+        "name": "机器人社",
+        "description": "设计和制作机器人，参与科技挑战赛。",
+        "image": "https://source.unsplash.com/400x200/?robot"
+      },
+      {
+        "name": "机器人社",
+        "description": "设计和制作机器人，参与科技挑战赛。",
+        "image": "https://source.unsplash.com/400x200/?robot"
+      },
+      {
+        "name": "机器人社",
+        "description": "设计和制作机器人，参与科技挑战赛。",
+        "image": "https://source.unsplash.com/400x200/?robot"
+      },
+      {
+        "name": "机器人社",
+        "description": "设计和制作机器人，参与科技挑战赛。",
+        "image": "https://source.unsplash.com/400x200/?robot"
+      },
+      {
+        "name": "机器人社",
+        "description": "设计和制作机器人，参与科技挑战赛。",
+        "image": "https://source.unsplash.com/400x200/?robot"
+      },
+      {
+        "name": "机器人社",
+        "description": "设计和制作机器人，参与科技挑战赛。",
+        "image": "https://source.unsplash.com/400x200/?robot"
+      },
+      {
+        "name": "机器人社",
+        "description": "设计和制作机器人，参与科技挑战赛。",
+        "image": "https://source.unsplash.com/400x200/?robot"
+      }
+    ]
+  }
