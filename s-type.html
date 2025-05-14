@@ -10,6 +10,62 @@
       background-color: #f7f7f7;
       padding: 20px;
     }
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      margin: 0;
+      padding: 10px 30px;
+      height: 100px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-logo {
+      height: 100px;
+      margin-right: 16px;
+    }
+    .school-name-block {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    .school-cn {
+      font-size: 18px;
+      font-weight: bold;
+      color: #444;
+    }
+    .school-en {
+      font-size: 12px;
+      color: #777;
+      text-transform: uppercase;
+    }
+
+    .navbar-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #242525;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar-links a:hover {
+      color: #0056b3;
+    }
     h1 {
       text-align: center;
       margin-bottom: 30px;
@@ -72,7 +128,20 @@
   </style>
 </head>
 <body>
-
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="other photo/WFL-logo.png" alt="WFL Logo" class="navbar-logo">
+      <div class="school-name-block">
+        <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
+        <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
+      </div>
+    </div>
+    <nav class="navbar-links">
+      <a>还没想好</a>
+      <a>还没想好</a>
+      <a>还没想好</a>
+    </nav>
+  </header>
 <h1>S类社团</h1>
 <div class="back-button">
   <a href="maincode.html">← 返回总览页面</a>
