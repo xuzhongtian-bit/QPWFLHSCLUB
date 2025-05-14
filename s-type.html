@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>学校社团展示</title>
+  <title>S类社团</title>
   <style>
     body {
       font-family: sans-serif;
@@ -13,6 +13,18 @@
     h1 {
       text-align: center;
       margin-bottom: 30px;
+    }
+    .back-button {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .back-button a {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
     }
     .grid {
       display: grid;
@@ -51,7 +63,7 @@
       margin-top: 10px;
       display: inline-block;
       padding: 8px 12px;
-      background-color: #007bff;
+      background-color: #28a745;
       color: white;
       border-radius: 6px;
       text-align: center;
@@ -61,16 +73,13 @@
 </head>
 <body>
 
-<h1>🏫 学校社团展示平台
-  <div class="category-nav">
-    <a href="c-type.html" class="category-button">C类社团</a>
-    <a href="a-type.html" class="category-button">A类社团</a>
-    <a href="s-type.html" class="category-button">S类社团</a>
-  </div>
-</h1>
+<h1>S类社团</h1>
+<div class="back-button">
+  <a href="111.html">← 返回总览页面</a>
+</div>
 
 <div class="grid" id="clubGrid">
-  <!-- JavaScript 会在这里插入卡片 -->
+  <!-- JavaScript 会在这里插入 S 类社团卡片 -->
 </div>
 
 <script>
@@ -78,23 +87,14 @@
     {
       name: "编程社",
       description: "探索前沿科技，参与各类科技竞赛与项目开发。",
-      image: "club photo/Codecraft logo.jpg"
+      image: "clab photo/Codecraft logo.jpg"
     },
     {
-      name: "文学社",
-      description: "爱好写作与阅读的同学们的聚集地。",
-      image: "https://source.unsplash.com/400x200/?books"
-    },
-    {
-      name: "摄影社",
-      description: "用镜头记录生活中的每一个精彩瞬间。",
-      image: "https://source.unsplash.com/400x200/?photography"
-    },
-    {
-      name: "舞蹈社",
-      description: "展示青春活力，参与校内外演出。",
-      image: "https://source.unsplash.com/400x200/?dance"
+      name: "机器人社",
+      description: "动手打造机器人，挑战人工智能极限。",
+      image: "https://source.unsplash.com/400x200/?robot"
     }
+    // 可继续添加其他 S 类社团
   ];
 
   const container = document.getElementById("clubGrid");
@@ -107,7 +107,7 @@
       <div class="card-content">
         <h2>${club.name}</h2>
         <p>${club.description}</p>
-        <div class="button" onclick="window.location.href='more info/Codecraft info.html'">了解更多</div>
+        <div class="button">了解更多</div>
       </div>
     `;
     container.appendChild(card);
