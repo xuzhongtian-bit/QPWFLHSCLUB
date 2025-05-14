@@ -78,6 +78,8 @@
   <a href="maincode.html">← 返回总览页面</a>
 </div>
 
+<button ></button>
+
 <div class="grid" id="clubGrid">
   <!-- JavaScript 会在这里插入 C 类社团卡片 -->
 </div>
@@ -87,12 +89,14 @@
     {
       name: "编程社",
       description: "探索前沿科技，参与各类科技竞赛与项目开发。",
-      image: "clab photo/Codecraft logo.jpg"
+      image: "clab photo/Codecraft logo.jpg",
+      text_address: "more info/Codecraft info.html"
     },
     {
       name: "机器人社",
       description: "动手打造机器人，挑战人工智能极限。",
-      image: "https://source.unsplash.com/400x200/?robot"
+      image: "https://source.unsplash.com/400x200/?robot",
+      
     }
     // 可继续添加其他 C 类社团
   ];
@@ -107,9 +111,10 @@
       <div class="card-content">
         <h2>${club.name}</h2>
         <p>${club.description}</p>
-        <div class="button">了解更多</div>
+        <div class="button" onclick="window.location.href='${club.text_address}'">了解更多</div>
       </div>
     `;
+    
     container.appendChild(card);
   });
 </script>

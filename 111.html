@@ -78,7 +78,8 @@
     {
       name: "编程社",
       description: "探索前沿科技，参与各类科技竞赛与项目开发。",
-      image: "club photo/Codecraft logo.jpg"
+      image: "club photo/Codecraft logo.jpg",
+      text_address: "more info/Codecraft info.html"
     },
     {
       name: "文学社",
@@ -107,7 +108,7 @@
       <div class="card-content">
         <h2>${club.name}</h2>
         <p>${club.description}</p>
-        <div class="button" onclick="window.location.href='more info/Codecraft info.html'">了解更多</div>
+        <div class="button" onclick="${club.text_address}">了解更多</div>
       </div>
     `;
     container.appendChild(card);
