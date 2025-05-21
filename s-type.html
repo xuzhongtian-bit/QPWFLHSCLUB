@@ -20,9 +20,10 @@
       justify-content: space-between;
       align-items: center;
       background-color: white;
+      flex-direction: column;
       margin: 0;
       padding: 10px 30px;
-      height: 100px;
+      height: 130px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       position: sticky;
       top: 0;
@@ -30,7 +31,11 @@
       right: 0;
       z-index: 1000;
     }
-
+    .navbar-top {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
     .navbar-left {
       display: flex;
       align-items: center;
@@ -54,7 +59,10 @@
       color: #777;
       text-transform: uppercase;
     }
-
+    .navbar-links {
+      display: flex;
+      margin-left: auto;
+    }
     .navbar-links a {
       margin-left: 20px;
       text-decoration: none;
@@ -64,6 +72,24 @@
     }
     .navbar-links a:hover {
       color: #0056b3;
+    }
+    .breadcrumb {
+      font-size: 16px;
+      color: #333;
+      background-color: #ffffff;
+      width: 100%;
+      padding-left: 30px;
+    }
+    .breadcrumb a {
+      color: #000000;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+      color:#005ec2
+    }
+    .breadcrumb span {
+      color: #000000;
     }
     h1 {
       text-align: center;
@@ -128,8 +154,10 @@
 </head>
 <body>
   <header class="navbar">
+    <div class="navbar-top">
+
     <div class="navbar-left">
-      <img src="other photo/WFL-logo.png" alt="WFL Logo" class="navbar-logo">
+      <img src="../other photo/WFL-logo.png" alt="WFL Logo" class="navbar-logo">
       <div class="school-name-block">
         <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
         <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
@@ -140,14 +168,18 @@
       <a>还没想好</a>
       <a>还没想好</a>
     </nav>
+
+    </div>
+    
+    <nav class="breadcrumb">
+      <a href="maincode.html">首页</a> &gt;
+      <span>S类社团</span>
+    </nav>
   </header>
 <h1>S类社团</h1>
-<div class="back-button">
-  <a href="maincode.html">← 返回总览页面</a>
-</div>
 
 <div class="grid" id="clubGrid">
-  
+
 </div>
 
 <script>
@@ -155,12 +187,14 @@
     {
       name: "编程社",
       description: "探索前沿科技，参与各类科技竞赛与项目开发。",
-      image: "clab photo/Codecraft logo.jpg"
+      image: "clab photo/Codecraft logo.jpg",
+      text_address: "more info/Codecraft info.html"
     },
     {
       name: "机器人社",
       description: "动手打造机器人，挑战人工智能极限。",
-      image: "https://source.unsplash.com/400x200/?robot"
+      image: "https://source.unsplash.com/400x200/?robot",
+      
     }
   ];
 
@@ -174,9 +208,10 @@
       <div class="card-content">
         <h2>${club.name}</h2>
         <p>${club.description}</p>
-        <div class="button">了解更多</div>
+        <div class="button" onclick="window.location.href='${club.text_address}'">了解更多</div>
       </div>
     `;
+    
     container.appendChild(card);
   });
 </script>
