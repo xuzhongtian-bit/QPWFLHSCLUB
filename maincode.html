@@ -205,7 +205,6 @@
   </style>
 </head>
 <body>
-  <!--导航栏-->
   <header class="navbar">
     <div class="navbar-top">
 
@@ -231,9 +230,10 @@
   </header>
 
 <div class="tab-buttons">
-  <button class="tab-button active" data-tab="C" data-i18n="main:C-type">C类社团</button>
-  <button class="tab-button" data-tab="A" data-i18n="main:A-type">A类社团</button>
-  <button class="tab-button" data-tab="S" data-i18n="main:S-type">S类社团</button>
+  <button class="tab-button active" data-tab="C" data-i18n="main:C-type">Creativity</button>
+  <button class="tab-button" data-tab="A" data-i18n="main:A-type">Activity</button>
+  <button class="tab-button" data-tab="S" data-i18n="main:S-type">Service</button>
+  <button class="tab-button" data-tab="S" data-i18n="main:S-type">Study</button>
 </div>
 
 <div id="C" class="tab-content active">
@@ -241,7 +241,7 @@
     <div class="fade-left"></div>
     <div class="fade-right"></div>
     <div class="scroll-container"></div>
-    <a class="view-more" href="c-type.html" data-i18n="main:view-more">查看详情 →</a>
+    <a class="view-more" href="creativity-type.html" data-i18n="main:view-more">查看详情 →</a>
   </div>
 </div>
 <div id="A" class="tab-content">
@@ -249,7 +249,7 @@
     <div class="fade-left"></div>
     <div class="fade-right"></div>
     <div class="scroll-container"></div>
-    <a class="view-more" href="a-type.html" data-i18n="main:view-more">查看详情 →</a>
+    <a class="view-more" href="activity-type.html" data-i18n="main:view-more">查看详情 →</a>
   </div>
 </div>
 <div id="S" class="tab-content">
@@ -257,7 +257,15 @@
     <div class="fade-left"></div>
     <div class="fade-right"></div>
     <div class="scroll-container"></div>
-    <a class="view-more" href="s-type.html" data-i18n="main:view-more">查看详情 →</a>
+    <a class="view-more" href="service-type.html" data-i18n="main:view-more">查看详情 →</a>
+  </div>
+</div>
+<div id="S" class="tab-content">
+  <div class="scroll-wrapper">
+    <div class="fade-left"></div>
+    <div class="fade-right"></div>
+    <div class="scroll-container"></div>
+    <a class="view-more" href="study-type.html" data-i18n="main:view-more">查看详情 →</a>
   </div>
 </div>
 
@@ -278,7 +286,7 @@
   fetch('zh_clubs.json')
     .then(response => response.json())
     .then(data => {
-      ['C', 'A', 'S'].forEach(type => {
+      ['C', 'A', 'S','St'].forEach(type => {
         const container = document.querySelector(`#${type} .scroll-container`);
         container.innerHTML = '';
         data[type].forEach(club => {
