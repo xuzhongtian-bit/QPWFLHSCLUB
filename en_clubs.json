@@ -1,175 +1,125 @@
 {
-    "C": [
-      {
-        "name": "Codecraft",
-        "description": "Explore cutting-edge technologies and participate in various technology competitions and project developments.",
-        "image": "club photo/Codecraft logo.jpg"
-      },
-      {
-        "name": "Codecraft",
-        "description": "Explore cutting-edge technologies and participate in various technology competitions and project developments.",
-        "image": "club photo/Codecraft logo.jpg"
-      },
-      {
-        "name": "Codecraft",
-        "description": "Explore cutting-edge technologies and participate in various technology competitions and project developments.",
-        "image": "club photo/Codecraft logo.jpg"
-      },
-      {
-        "name": "Codecraft",
-        "description": "Explore cutting-edge technologies and participate in various technology competitions and project developments.",
-        "image": "club photo/Codecraft logo.jpg"
-      },
-      {
-        "name": "Codecraft",
-        "description": "Explore cutting-edge technologies and participate in various technology competitions and project developments.",
-        "image": "club photo/Codecraft logo.jpg"
-      },
-      {
-        "name": "Codecraft",
-        "description": "Explore cutting-edge technologies and participate in various technology competitions and project developments.",
-        "image": "club photo/Codecraft logo.jpg"
-      },
-      {
-        "name": "Codecraft",
-        "description": "Explore cutting-edge technologies and participate in various technology competitions and project developments.",
-        "image": "club photo/Codecraft logo.jpg"
-      },
-      {
-        "name": "linguistic club",
-        "description": "A gathering place for students who love writing and reading.",
-        "image": "https://source.unsplash.com/400x200/?books"
-      }
-    ],
-    "A": [
-      {
-        "name": "photography  club",
-        "description": "Capture every wonderful moment in life with the lens.",
-        "image": "https://source.unsplash.com/400x200/?photography"
-      },
-      {
-        "name": "photography  club",
-        "description": "Capture every wonderful moment in life with the lens.",
-        "image": "https://source.unsplash.com/400x200/?photography"
-      },
-      {
-        "name": "photography  club",
-        "description": "Capture every wonderful moment in life with the lens.",
-        "image": "https://source.unsplash.com/400x200/?photography"
-      },
-      {
-        "name": "photography  club",
-        "description": "Capture every wonderful moment in life with the lens.",
-        "image": "https://source.unsplash.com/400x200/?photography"
-      },
-      {
-        "name": "photography  club",
-        "description": "Capture every wonderful moment in life with the lens.",
-        "image": "https://source.unsplash.com/400x200/?photography"
-      },
-      {
-        "name": "photography  club",
-        "description": "Capture every wonderful moment in life with the lens.",
-        "image": "https://source.unsplash.com/400x200/?photography"
-      },
-      {
-        "name": "photography  club",
-        "description": "Capture every wonderful moment in life with the lens.",
-        "image": "https://source.unsplash.com/400x200/?photography"
-      },
-      {
-        "name": "photography  club",
-        "description": "Capture every wonderful moment in life with the lens.",
-        "image": "https://source.unsplash.com/400x200/?photography"
-      },
-      {
-        "name": "dancing club",
-        "description": "Show youthful vitality and participate in performances both inside and outside the school.",
-        "image": "https://source.unsplash.com/400x200/?dance"
-      }
-    ],
-    "S": [
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      }
-    ],
-    "St": [
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "Robot club",
-        "description": "Design and manufacture robots, participate in the technology challenge competition.",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      }
-    ]
-  }
+  "C": [
+    {
+      "name": "Anime Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Drama Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Intangible Heritage Crafts Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Dance Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Choir",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Band",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Photography Club",
+      "description": "description",
+      "image": ""
+    }
+  ],
+  "A": [
+    {
+      "name": "Soccer Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Volleyball Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Basketball Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Fencing Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Badminton Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Table Tennis Club",
+      "description": "description",
+      "image": ""
+    }
+  ],
+  "S": [
+    {
+      "name": "Urban Planning Research Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Coffee Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Wishers",
+      "description": "description",
+      "image": ""
+    }
+  ],
+  "St": [
+    {
+      "name": "Codecraft",
+      "description": "description",
+      "image": "club photo/Codecraft logo.jpg"
+    },
+    {
+      "name": "Astronomy Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Chemistry Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Economics Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Biology Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Psychology Club",
+      "description": "description",
+      "image": ""
+    },
+    {
+      "name": "Debate Club",
+      "description": "description",
+      "image": ""
+    }
+  ]
+}
