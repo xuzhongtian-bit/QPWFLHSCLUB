@@ -230,10 +230,10 @@
   </header>
 
 <div class="tab-buttons">
-  <button class="tab-button active" data-tab="C" data-i18n="main:C-type">创造类社团</button>
-  <button class="tab-button" data-tab="A" data-i18n="main:A-type">活动类社团</button>
-  <button class="tab-button" data-tab="S" data-i18n="main:S-type">服务类社团</button>
-  <button class="tab-button" data-tab="St" data-i18n="main:St-type">学术类社团</button>
+  <button class="tab-button active" data-tab="C" data-i18n="main:C-type">创意艺术</button>
+  <button class="tab-button" data-tab="A" data-i18n="main:A-type">体育活动</button>
+  <button class="tab-button" data-tab="S" data-i18n="main:S-type">社会服务</button>
+  <button class="tab-button" data-tab="St" data-i18n="main:St-type">学术类</button>
 </div>
 
 <div id="C" class="tab-content active">
@@ -289,6 +289,18 @@
       ['C', 'A', 'S','St'].forEach(type => {
         const container = document.querySelector(`#${type} .scroll-container`);
         container.innerHTML = '';
+        data[type].forEach(club => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <img src="${club.image}" alt="${club.name}">
+            <div class="card-content">
+              <h2>${club.name}</h2>
+              <p>${club.description}</p>
+            </div>
+          `;
+          container.appendChild(card);
+        });
         data[type].forEach(club => {
           const card = document.createElement('div');
           card.className = 'card';
