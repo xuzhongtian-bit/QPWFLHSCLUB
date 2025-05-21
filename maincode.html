@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>主页———社团信息</title>
+  <title data-i18n="title">主页———社团信息</title>
   <style>
    body {
       margin: 0;
@@ -178,7 +178,7 @@
     }
   </style>
 </head>
-<body>
+<>
   <!--导航栏-->
   <header class="navbar">
     <div class="navbar-left">
@@ -189,9 +189,10 @@
       </div>
     </div>
     <nav class="navbar-links">
+      <a onclick="loadLanguage('en')">English</a>
+      <a onclick="loadLanguage('zn')">中文</a>
       <a>还没想好</a>
-      <a>还没想好</a>
-      <a>还没想好</a>
+      <!-- <button onclick="loadLanguage('en')">English</button> -->
     </nav>
   </header>
 
@@ -206,7 +207,7 @@
     <div class="fade-left"></div>
     <div class="fade-right"></div>
     <div class="scroll-container"></div>
-    <a class="view-more" href="c-type.html">查看详情 →</a>
+    <a class="view-more" href="c-type.html" data-i18n="view-more">查看详情 →</a>
   </div>
 </div>
 <div id="A" class="tab-content">
@@ -214,7 +215,7 @@
     <div class="fade-left"></div>
     <div class="fade-right"></div>
     <div class="scroll-container"></div>
-    <a class="view-more" href="a-type.html">查看详情 →</a>
+    <a class="view-more" href="a-type.html" data-i18n="view-more">查看详情 →</a>
   </div>
 </div>
 <div id="S" class="tab-content">
@@ -222,7 +223,7 @@
     <div class="fade-left"></div>
     <div class="fade-right"></div>
     <div class="scroll-container"></div>
-    <a class="view-more" href="s-type.html">查看详情 →</a>
+    <a class="view-more" href="s-type.html" data-i18n="view-more">查看详情 →</a>
   </div>
 </div>
 
@@ -261,6 +262,8 @@
       });
     });
 </script>
+
+<script src="i18n.js"></script>
 
 </body>
 </html>
