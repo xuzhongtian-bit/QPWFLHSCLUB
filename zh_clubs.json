@@ -1,175 +1,125 @@
 {
     "C": [
       {
-        "name": "编程社",
-        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
-        "image": "club photo/Codecraft logo.jpg"
+        "name": "动漫社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "编程社",
-        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
-        "image": "club photo/Codecraft logo.jpg"
+        "name": "戏剧社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "编程社",
-        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
-        "image": "club photo/Codecraft logo.jpg"
+        "name": "非遗手工社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "编程社",
-        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
-        "image": "club photo/Codecraft logo.jpg"
+        "name": "舞蹈社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "编程社",
-        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
-        "image": "club photo/Codecraft logo.jpg"
+        "name": "合唱团",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "编程社",
-        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
-        "image": "club photo/Codecraft logo.jpg"
+        "name": "乐队",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "编程社",
-        "description": "探索前沿科技，参与各类科技竞赛与项目开发。",
-        "image": "club photo/Codecraft logo.jpg"
-      },
-      {
-        "name": "文学社",
-        "description": "爱好写作与阅读的同学们的聚集地。",
-        "image": "https://source.unsplash.com/400x200/?books"
+        "name": "摄影社",
+        "description": "description",
+        "image": ""
       }
     ],
     "A": [
       {
-        "name": "摄影社",
-        "description": "用镜头记录生活中的每一个精彩瞬间。",
-        "image": "https://source.unsplash.com/400x200/?photography"
+        "name": "足球社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "摄影社",
-        "description": "用镜头记录生活中的每一个精彩瞬间。",
-        "image": "https://source.unsplash.com/400x200/?photography"
+        "name": "排球社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "摄影社",
-        "description": "用镜头记录生活中的每一个精彩瞬间。",
-        "image": "https://source.unsplash.com/400x200/?photography"
+        "name": "篮球社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "摄影社",
-        "description": "用镜头记录生活中的每一个精彩瞬间。",
-        "image": "https://source.unsplash.com/400x200/?photography"
+        "name": "击剑社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "摄影社",
-        "description": "用镜头记录生活中的每一个精彩瞬间。",
-        "image": "https://source.unsplash.com/400x200/?photography"
+        "name": "羽毛球社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "摄影社",
-        "description": "用镜头记录生活中的每一个精彩瞬间。",
-        "image": "https://source.unsplash.com/400x200/?photography"
-      },
-      {
-        "name": "摄影社",
-        "description": "用镜头记录生活中的每一个精彩瞬间。",
-        "image": "https://source.unsplash.com/400x200/?photography"
-      },
-      {
-        "name": "摄影社",
-        "description": "用镜头记录生活中的每一个精彩瞬间。",
-        "image": "https://source.unsplash.com/400x200/?photography"
-      },
-      {
-        "name": "舞蹈社",
-        "description": "展示青春活力，参与校内外演出。",
-        "image": "https://source.unsplash.com/400x200/?dance"
+        "name": "乒乓球社",
+        "description": "description",
+        "image": ""
       }
     ],
     "S": [
       {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
+        "name": "城市规划研习社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
+        "name": "咖啡社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
+        "name": "Wishers",
+        "description": "description",
+        "image": ""
       }
     ],
     "St": [
       {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
+        "name": "编程社",
+        "description": "description",
+        "image": "club photo/Codecraft logo.jpg"
       },
       {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
+        "name": "天文社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
+        "name": "化学社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
+        "name": "经济社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
+        "name": "生物社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
+        "name": "心理社",
+        "description": "description",
+        "image": ""
       },
       {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
-      },
-      {
-        "name": "机器人社",
-        "description": "设计和制作机器人，参与科技挑战赛。",
-        "image": "https://source.unsplash.com/400x200/?robot"
+        "name": "辩论社",
+        "description": "description",
+        "image": ""
       }
     ]
   }
