@@ -62,7 +62,7 @@ let currentLang = 'zh';
     fetch(`${lang}_clubs.json`)
     .then(response => response.json())
     .then(data => {
-      ['C', 'A', 'S'].forEach(type => {
+      ['C', 'A', 'S',"St"].forEach(type => {
         const container = document.querySelector(`#${type} .scroll-container`);
         container.innerHTML = '';
         data[type].forEach(club => {
@@ -83,7 +83,6 @@ let currentLang = 'zh';
 
   
 
-  // 初始化加载中文
   window.onload = () => {
     loadContent(currentLang);
   };
