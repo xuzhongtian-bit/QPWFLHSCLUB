@@ -1,7 +1,8 @@
 {
     "title": "主页",
     "view-more": "查看详情",
-    "C-type": "C类社团",
-    "A-type": "A类社团",
-    "S-type": "S类社团"
+    "C-type": "创造类社团",
+    "A-type": "活动类社团",
+    "S-type": "服务类社团",
+    "St-type": " 学术类社团"
 }

@@ -1,7 +1,8 @@
 {
     "title": "Main page",
     "view-more": "check more",
-    "C-type": "C type clubs",
-    "A-type": "A type clubs",
-    "S-type": "S type clubs"
+    "C-type": "Creativity",
+    "A-type": "Activity",
+    "S-type": "Service",
+    "St-type": "Study"
 }
