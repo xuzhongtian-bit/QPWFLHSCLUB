@@ -6,3 +6,6 @@ QPWFLHS-CLUB website
 
 2025.5.14
 更新导航栏，以及more details
+
+2025.5.21
+更新面包屑导航，中英文互译，各个社团卡片
