@@ -95,6 +95,7 @@
       display: flex;
       justify-content: center;
       margin-bottom: 20px;
+      text-align: center;
     }
     .tab-button {
       flex: 1;
@@ -106,10 +107,18 @@
       color: #333;
       border-bottom: 3px solid transparent;
       transition: border-color 0.3s;
+      text-align: center;
+      width: 100%;
     }
     .tab-button.active {
       border-color: #333;
       font-weight: bold;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
     }
     .tab-content {
       display: none;
@@ -187,10 +196,10 @@
     </nav>
   </header>
   <div class="tab-buttons">
-    <a href="../creativity/creativity-type.html" class="tab-button active" data-i18n="main:C-type">创意艺术</a>
+    <a href="../creativity/creativity-type.html" class="tab-button" data-i18n="main:C-type">创意艺术</a>
     <a href="../activity/activity-type.html" class="tab-button" data-i18n="main:A-type">体育活动</a>
     <a href="../service/service-type.html" class="tab-button" data-i18n="main:S-type">社会服务</a>
-    <a class="tab-button" data-i18n="main:St-type">学术类</a>
+    <a class="tab-button active" data-i18n="main:St-type">学术类</a>
   </div>
 
 <div class="grid" id="clubGrid">
@@ -254,7 +263,7 @@
       document.getElementById(button.dataset.tab).classList.add('active');
     });
   });
-  
+
   const container = document.getElementById("clubGrid");
 
   clubs.forEach(club => {
