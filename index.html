@@ -229,59 +229,15 @@
     </nav>
   </header>
 
-<div class="tab-buttons">
-  <button class="tab-button active" data-tab="C" data-i18n="main:C-type">创意艺术</button>
-  <button class="tab-button" data-tab="A" data-i18n="main:A-type">体育活动</button>
-  <button class="tab-button" data-tab="S" data-i18n="main:S-type">社会服务</button>
-  <button class="tab-button" data-tab="St" data-i18n="main:St-type">学术类</button>
-</div>
-
 <div id="C" class="tab-content active">
   <div class="scroll-wrapper">
     <div class="fade-left"></div>
     <div class="fade-right"></div>
     <div class="scroll-container"></div>
-    <a class="view-more" href="creativity/creativity-type.html" data-i18n="main:view-more">查看详情 →</a>
-  </div>
-</div>
-<div id="A" class="tab-content">
-  <div class="scroll-wrapper">
-    <div class="fade-left"></div>
-    <div class="fade-right"></div>
-    <div class="scroll-container"></div>
-    <a class="view-more" href="activity/activity-type.html" data-i18n="main:view-more">查看详情 →</a>
-  </div>
-</div>
-<div id="S" class="tab-content">
-  <div class="scroll-wrapper">
-    <div class="fade-left"></div>
-    <div class="fade-right"></div>
-    <div class="scroll-container"></div>
-    <a class="view-more" href="service/service-type.html" data-i18n="main:view-more">查看详情 →</a>
-  </div>
-</div>
-<div id="St" class="tab-content">
-  <div class="scroll-wrapper">
-    <div class="fade-left"></div>
-    <div class="fade-right"></div>
-    <div class="scroll-container"></div>
-    <a class="view-more" href="study/study-type.html" data-i18n="main:view-more">查看详情 →</a>
   </div>
 </div>
 
 <script>
-  const tabButtons = document.querySelectorAll('.tab-button');
-  const tabContents = document.querySelectorAll('.tab-content');
-
-  tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
-
-      button.classList.add('active');
-      document.getElementById(button.dataset.tab).classList.add('active');
-    });
-  });
 
   fetch('other/zh_clubs.json')
     .then(response => response.json())
