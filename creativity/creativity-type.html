@@ -91,21 +91,35 @@
     .breadcrumb span {
       color: #000000;
     }
+    .tab-buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .tab-button {
+      flex: 1;
+      background-color: transparent;
+      border: none;
+      padding: 10px 0;
+      font-size: 16px;
+      cursor: pointer;
+      color: #333;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .tab-button.active {
+      border-color: #333;
+      font-weight: bold;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
     h1 {
       text-align: center;
       margin-bottom: 30px;
-    }
-    .back-button {
-      display: block;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .back-button a {
-      padding: 8px 16px;
-      background-color: #007bff;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
     }
     .grid {
       display: grid;
@@ -177,10 +191,10 @@
     </nav>
   </header>
   <div class="tab-buttons">
-    <button class="tab-button active" data-tab="C" data-i18n="main:C-type">创意艺术</button>
-    <button class="tab-button" data-tab="A" data-i18n="main:A-type">体育活动</button>
-    <button class="tab-button" data-tab="S" data-i18n="main:S-type">社会服务</button>
-    <button class="tab-button" data-tab="St" data-i18n="main:St-type">学术类</button>
+    <a href="creativity-type.html" class="tab-button active" data-i18n="main:C-type">创意艺术</a>
+    <a href="../activity/activity-type.html" class="tab-button" data-i18n="main:A-type">体育活动</a>
+    <a href="../service/service-type.html" class="tab-button" data-i18n="main:S-type">社会服务</a>
+    <a href="../study/study-type.html" class="tab-button" data-i18n="main:St-type">学术类</a>
   </div>
 
 <div class="grid" id="clubGrid">
