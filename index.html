@@ -96,6 +96,56 @@
     .breadcrumb span {
       color: #000000;
     }
+    .button {
+      display: inline-block;
+      background-color: #213cf1;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      margin-top: 14px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .button:hover {
+      background-color: #388e3c;
+    }
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      color: #333333;
+      margin: 40px 0 20px 0;
+      letter-spacing: 2px;
+    }
+    .notice-board {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 10px;
+    }
+
+    .notice {
+      background-color: #ffffff;
+      border-left: 5px solid #007bff;
+      padding: 15px;
+      font-size: 14px;
+      color: #333;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+      line-height: 1.6;
+      white-space: normal;
+      word-wrap: break-word;
+    }
+    .notice:hover {
+      transform: translateY(-3px);
+    }
+    
     .scroll-wrapper {
       position: relative;
       overflow: hidden;
@@ -203,7 +253,21 @@
     </nav>
   </header>
 
-<div id="C" class="tab-content active">
+  <h1>
+    🪧公告栏
+  </h1>
+  
+  <div class="notice-board">
+    <div class="notice">📌 本周五放学后社团不开放，因校区临时施工，请各位同学互相转告并提前安排社团计划。</div>
+    <div class="notice">📢 校园开放日将于本月20日举行，欢迎家长预约参与。活动包括社团展示、师生互动和校园导览。</div>
+    <div class="notice">🔔 请各社团提交下学期计划</div>
+  </div>
+
+  <h1>
+    优秀社团
+  </h1>
+
+<div id="ExClubs" class="tab-content active">
   <div class="scroll-wrapper">
     <div class="fade-left"></div>
     <div class="fade-right"></div>
@@ -216,7 +280,7 @@
   fetch('other/zh_clubs.json')
     .then(response => response.json())
     .then(data => {
-      ['C'].forEach(type => {
+      ['ExClubs'].forEach(type => {
         const container = document.querySelector(`#${type} .scroll-container`);
         container.innerHTML = '';
         data[type].forEach(club => {
@@ -227,6 +291,7 @@
             <div class="card-content">
               <h2>${club.name}</h2>
               <p>${club.description}</p>
+              <a class="button" href="${club.text_address}" target="_blank">查看详情</a>
             </div>
           `;
           container.appendChild(card);
@@ -239,6 +304,7 @@
             <div class="card-content">
               <h2>${club.name}</h2>
               <p>${club.description}</p>
+              <a class="button" href="${club.text_address}" target="_blank">查看详情</a>
             </div>
           `;
           container.appendChild(card);
