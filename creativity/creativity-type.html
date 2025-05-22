@@ -176,7 +176,12 @@
       <span>创意艺术</span>
     </nav>
   </header>
-<h1>创意艺术</h1>
+  <div class="tab-buttons">
+    <button class="tab-button active" data-tab="C" data-i18n="main:C-type">创意艺术</button>
+    <button class="tab-button" data-tab="A" data-i18n="main:A-type">体育活动</button>
+    <button class="tab-button" data-tab="S" data-i18n="main:S-type">社会服务</button>
+    <button class="tab-button" data-tab="St" data-i18n="main:St-type">学术类</button>
+  </div>
 
 <div class="grid" id="clubGrid">
 
@@ -227,7 +232,18 @@
       text_address: ""
     }
   ];
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
 
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      button.classList.add('active');
+      document.getElementById(button.dataset.tab).classList.add('active');
+    });
+  });
   const container = document.getElementById("clubGrid");
 
   clubs.forEach(club => {
