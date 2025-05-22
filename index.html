@@ -242,7 +242,7 @@
   fetch('other/zh_clubs.json')
     .then(response => response.json())
     .then(data => {
-      ['C', 'A', 'S','St'].forEach(type => {
+      ['C'].forEach(type => {
         const container = document.querySelector(`#${type} .scroll-container`);
         container.innerHTML = '';
         data[type].forEach(club => {
