@@ -1,125 +1,46 @@
 {
-    "C": [
+    "ExClubs": [
       {
-        "name": "动漫社",
+        "name": "社团1",
         "description": "description",
-        "image": ""
+        "image": "",
+        "text_address":"../study/codecraft/Codecraft info.html"
       },
       {
-        "name": "戏剧社",
+        "name": "社团2",
         "description": "description",
-        "image": ""
+        "image": "",
+        "text_address":""
       },
       {
-        "name": "非遗手工社",
+        "name": "社团3",
         "description": "description",
-        "image": ""
+        "image": "",
+        "text_address":""
       },
       {
-        "name": "舞蹈社",
+        "name": "社团4",
         "description": "description",
-        "image": ""
+        "image": "",
+        "text_address":""
       },
       {
-        "name": "合唱团",
+        "name": "社团5",
         "description": "description",
-        "image": ""
+        "image": "",
+        "text_address":""
       },
       {
-        "name": "乐队",
+        "name": "社团6",
         "description": "description",
-        "image": ""
+        "image": "",
+        "text_address":""
       },
       {
-        "name": "摄影社",
+        "name": "社团7",
         "description": "description",
-        "image": ""
-      }
-    ],
-    "A": [
-      {
-        "name": "足球社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "排球社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "篮球社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "击剑社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "羽毛球社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "乒乓球社",
-        "description": "description",
-        "image": ""
-      }
-    ],
-    "S": [
-      {
-        "name": "城市规划研习社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "咖啡社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "Wishers",
-        "description": "description",
-        "image": ""
-      }
-    ],
-    "St": [
-      {
-        "name": "编程社",
-        "description": "description",
-        "image": "club photo/Codecraft logo.jpg"
-      },
-      {
-        "name": "天文社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "化学社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "经济社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "生物社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "心理社",
-        "description": "description",
-        "image": ""
-      },
-      {
-        "name": "辩论社",
-        "description": "description",
-        "image": ""
+        "image": "",
+        "text_address":""
       }
     ]
   }
