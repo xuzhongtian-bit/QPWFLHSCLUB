@@ -11,7 +11,7 @@ data: {}
 
 function loadLanguage(lang) {
     Promise.all([
-        fetch(`${lang}_main.json`).then(res => res.json()),
+        fetch(`${lang}_index.json`).then(res => res.json()),
         fetch(`${lang}_clubs.json`).then(res => res.json())
     ]).then(([mainData, uiData]) => {
         i18nMain.locale = lang;
