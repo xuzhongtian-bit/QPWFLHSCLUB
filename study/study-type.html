@@ -207,50 +207,31 @@
 </div>
 
 <script>
-  const clubs = [
-    {
-      name: "编程社",
-      description: "description",
-      image: "codecraft/Codecraft logo.jpg",
-      text_address: "codecraft/Codecraft info.html"
-    },
-    {
-      name: "辩论社",
-      description: "description",
-      image: "",
-      text_address: ""
-    },
-    {
-      name: "经济社",
-      description: "description",
-      image: "",
-      text_address: ""
-    },
-    {
-      name: "生物社",
-      description: "description",
-      image: "",
-      text_address: ""
-    },
-    {
-      name: "天文社",
-      description: "description",
-      image: "",
-      text_address: ""
-    },
-    {
-      name: "化学社",
-      description: "description",
-      image: "",
-      text_address: ""
-    },
-    {
-      name: "心理社",
-      description: "description",
-      image: "",
-      text_address: ""
-    }
-  ];
+  
+  fetch('../other/zh_clubs.json')
+    .then(response => response.json())
+    .then(data => {
+      const clubs = data["St"];
+      const container = document.getElementById("clubGrid");
+
+      clubs.forEach(club => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <img src="${club.image}" alt="${club.name}">
+          <div class="card-content">
+            <h2>${club.name}</h2>
+            <p>${club.description}</p>
+            <div class="button" onclick="window.location.href='${club.text_address}'">了解更多</div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    })
+    .catch(error => {
+      console.error("加载社团数据失败:", error);
+    });
+
   const tabButtons = document.querySelectorAll('.tab-button');
   const tabContents = document.querySelectorAll('.tab-content');
 
