@@ -91,21 +91,31 @@
     .breadcrumb span {
       color: #000000;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
+    .tab-buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
     }
-    .back-button {
+    .tab-button {
+      flex: 1;
+      background-color: transparent;
+      border: none;
+      padding: 10px 0;
+      font-size: 16px;
+      cursor: pointer;
+      color: #333;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .tab-button.active {
+      border-color: #333;
+      font-weight: bold;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
       display: block;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .back-button a {
-      padding: 8px 16px;
-      background-color: #007bff;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
     }
     .grid {
       display: grid;
@@ -176,7 +186,12 @@
       <span>学术类</span>
     </nav>
   </header>
-<h1>学术类</h1>
+  <div class="tab-buttons">
+    <a href="../creativity/creativity-type.html" class="tab-button active" data-i18n="main:C-type">创意艺术</a>
+    <a href="../activity/activity-type.html" class="tab-button" data-i18n="main:A-type">体育活动</a>
+    <a href="../service/service-type.html" class="tab-button" data-i18n="main:S-type">社会服务</a>
+    <a class="tab-button" data-i18n="main:St-type">学术类</a>
+  </div>
 
 <div class="grid" id="clubGrid">
 
@@ -227,7 +242,19 @@
       text_address: ""
     }
   ];
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
 
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      button.classList.add('active');
+      document.getElementById(button.dataset.tab).classList.add('active');
+    });
+  });
+  
   const container = document.getElementById("clubGrid");
 
   clubs.forEach(club => {
