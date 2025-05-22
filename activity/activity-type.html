@@ -207,44 +207,31 @@
 </div>
 
 <script>
-  const clubs = [
-    {
-      name: "排球社",
-      description: "description",
-      image: "",
-      text_address: ""
-    },
-    {
-      name: "足球社",
-      description: "description",
-      image: "",
-      text_address: ""
-    },
-    {
-      name: "羽毛球社",
-      description: "description",
-      image: "",
-      text_address: ""
-    },
-    {
-      name: "篮球社",
-      description: "description",
-      image: "",
-      text_address: ""
-    },
-    {
-      name: "击剑社",
-      description: "description",
-      image: "",
-      text_address: ""
-    },
-    {
-      name: "乒乓球社",
-      description: "description",
-      image: "",
-      text_address: ""
-    }
-  ];
+
+  fetch('../other/zh_clubs.json')
+    .then(response => response.json())
+    .then(data => {
+      const clubs = data["A"];
+      const container = document.getElementById("clubGrid");
+
+      clubs.forEach(club => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <img src="${club.image}" alt="${club.name}">
+          <div class="card-content">
+            <h2>${club.name}</h2>
+            <p>${club.description}</p>
+            <div class="button" onclick="window.location.href='${club.text_address}'">了解更多</div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    })
+    .catch(error => {
+      console.error("加载社团数据失败:", error);
+    });
+
   const tabButtons = document.querySelectorAll('.tab-button');
   const tabContents = document.querySelectorAll('.tab-content');
 
