@@ -69,23 +69,47 @@
     .navbar-links a:hover {
       color: #0056b3;
     }
-    .breadcrumb {
-      font-size: 16px;
-      color: #333;
-      background-color: #ffffff;
-      width: 100%;
-      padding-left: 30px;
+    .dropdown {
+      position: relative;
+      display: inline-block;
     }
-    .breadcrumb a {
-      color: #000000;
+    .dropbtn {
+      padding: 10px;
+      color: #242525;
+      font-weight: 500;
       text-decoration: none;
+      cursor: pointer;
+      transition: color 0.3s;
     }
-    .breadcrumb a:hover {
-      text-decoration: underline;
-      color:#005ec2
+    .dropbtn:hover {
+      color: #0056b3;
     }
-    .breadcrumb span {
-      color: #000000;
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      z-index: 1001;
+      border-radius: 8px;
+      overflow: hidden;
+      top: 100%;
+      left: 0;
+    }
+    .dropdown-content a {
+      color: #242525;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+      color: #007bff;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
   </style>
@@ -103,7 +127,15 @@
     </div>
     <nav class="navbar-links">
       <a href="../../index.html">首页</a>
-      <a href="../../creativity/creativity-type.html">全部社团</a>
+      <div class="dropdown">
+        <a class="dropbtn">全部社团</a>
+        <div class="dropdown-content">
+          <a href="../../creativity/creativity-type.html">创意艺术</a>
+          <a href="../../activity/activity-type.html">体育活动</a>
+          <a href="../../service/service-type.html">社会服务</a>
+          <a href="../../study/study-type.html">学术类</a>
+        </div>
+      </div>
       <a href="">意见箱</a>
       <a onclick="switchLanguage();switchLanguage_inJson()">EN/中文</a>
     </nav>
