@@ -111,7 +111,21 @@
     .dropdown:hover .dropdown-content {
       display: block;
     }
-
+    .top-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .leaders {
+      flex: 1;
+    }
+    .club-logo {
+      width: 120px;
+      height: auto;
+      margin-left: 20px;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
@@ -141,29 +155,39 @@
     </nav>
 
     </div>
+
   </header>
   
   <div class="container">
     <h1>编程社团介绍</h1>
-    <p><strong>编程社</strong>是一个面向全校学生开放的技术型社团，致力于激发同学们对计算机编程的兴趣，提升编程技能，培养逻辑思维和创新能力。我们欢迎零基础的新手，也鼓励有经验的同学深入探索。</p>
+    <div class="top-info">
+      <div class="leaders">
+        <p><strong>社长：</strong>孙翰宁</p>
+        <p><strong>副社长：</strong>南天</p>
+        <p><strong>指导老师：</strong>张扬</p>
+      </div>
+      <img src="Codecraft logo.jpg" class="club-logo">
+    </div>
     
-    <p>在这里，你可以：</p>
+    <p><strong>社团简介：</strong></p>
     <ul>
-      <li>学习主流编程语言，如 Python、C++、Java 等</li>
-      <li>参与项目开发，动手做小游戏、小程序、网站等</li>
-      <li>体验算法与竞赛的乐趣，挑战思维极限</li>
-      <li>结识志同道合的小伙伴，共同成长进步</li>
+      <li>编程社（Codecraft）是一个由学生主导、项目驱动的技术型社团，致力于通过真实开发项目提升成员的编程能力、项目协作能力与技术素养。如你所见，这个网站就是编程社的第一个项目</li>
     </ul>
 
-    <p>我们会定期举办：</p>
+    <p><strong>社团采用「项目式开发s+周会协作」双轮驱动模式：</strong></p>
     <ul>
-      <li>编程基础教学课</li>
-      <li>项目实战工作坊</li>
-      <li>校内外编程挑战赛</li>
-      <li>学长学姐经验分享会</li>
+      <li>每周集体会议由学校统一安排时间进行，围绕 TOWER 项目清单展开，包括任务进展回顾、需求增补讨论、优先级调整与问题答疑等。</li>
+      <li>日常开发由个人在平时时间完成，成员通过 Git 版本管理参与代码协作，在微信群进行技术支持与问题讨论。</li>
     </ul>
 
-    <p>无论你是对科技充满好奇的新手，还是有志成为程序员的进阶玩家，编程社都欢迎你的加入！<strong>用代码改变世界，从编程社开始。</strong></p>
+    <p><strong>加入本社团，意味着你将：</strong></p>
+    <ul>
+      <li>亲手参与真实项目开发，从0到1构建网站</li>
+      <li>接触团队开发流程与工具（Git、TOWER、Node 等）</li>
+      <li>培养自驱式学习习惯与严谨的工程思维</li>
+      <li>在代码冲突与协作中不断成长为真正的开发者</li>
+    </ul>
+
   </div>
 </body>
 </html>
