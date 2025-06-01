@@ -121,7 +121,8 @@
       {
         "name": "咖啡社",
         "description": "description",
-        "image": ""
+        "image": "../service/ORCAFE/ORCAFE logo.jpg",
+        "text_address":"../service/ORCAFE/ORCAFE info.html"
       },
       {
         "name": "Wishers",
