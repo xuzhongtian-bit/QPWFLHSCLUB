@@ -69,7 +69,7 @@
         "name": "合唱团",
         "description": "声动心弦，合唱音韵。",
         "image": "../creativity/Phonology/Phonology logo.jpg",
-        "text_address": "..creativity/Phonology/Phonology info.html"
+        "text_address": "../creativity/Phonology/Phonology info.html"
       },
       {
         "name": "乐队",
