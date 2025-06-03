@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title data-i18n="main:title">首页————社团信息</title>
+  <title data-i18n="main:title">Main page</title>
   <style>
    body {
       margin: 0;
@@ -266,17 +266,17 @@
       </div>
     </div>
     <nav class="navbar-links">
-      <a href="index.html">首页</a>
+      <a href="index.html">main page</a>
       <div class="dropdown">
-        <a class="dropbtn">全部社团</a>
+        <a class="dropbtn">all clubs</a>
         <div class="dropdown-content">
-          <a href="./creativity/creativity-type.html">创意艺术</a>
-          <a href="./activity/activity-type.html">体育活动</a>
-          <a href="./service/service-type.html">社会服务</a>
-          <a href="./study/study-type.html">学术类</a>
+          <a href="./creativity/creativity-type.html">Creativity</a>
+          <a href="./activity/activity-type_en.html">Activity</a>
+          <a href="./service/service-type.html">Service</a>
+          <a href="./study/study-type.html">Study</a>
         </div>
       </div>
-      <a href="">意见箱</a>
+      <a href="">Suggestion box</a>
       <a onclick="switchLanguage();change_lang()">EN/中文</a>
     </nav>
 
@@ -285,17 +285,17 @@
   </header>
 
   <h1>
-    🪧公告栏
+    🪧notice board
   </h1>
   
   <div class="notice-board">
-    <div class="notice">本网站目前还处于开发状态，有任何bug或者关于网站外观、内容等设计的想法，请私信编程社社长，欢迎投稿！</div>
-    <div class="notice">请各社团社长尽快提交社团的简介、logo、中英文名等信息，以完善网站内的社团介绍。</div>
-    <div class="notice">意见箱功能目前正在开发中，敬请期待。</div>
+    <div class="notice">This website is currently under development. If you find any bugs or have any ideas about the website's appearance, content, or other designs, please send a private message to the president of the Programming Club. We welcome your contributions!</div>
+    <div class="notice">Please have the presidents of all clubs submit the club's brief introduction, logo, Chinese and English names, etc. as soon as possible to complete the club introduction on the website.</div>
+    <div class="notice">The suggestion box function is currently under development. Please stay tuned.</div>
   </div>
 
   <h1>
-    优秀社团
+    great clubs
   </h1>
 
 <div id="ExClubs" class="tab-content active">
@@ -322,7 +322,7 @@
             <div class="card-content">
               <h2>${club.name}</h2>
               <p>${club.description}</p>
-              <a class="button" href="${club.text_address}" target="_blank">查看详情</a>
+              <a class="button" href="${club.text_address}" target="_blank">check more</a>
             </div>
           `;
           container.appendChild(card);
@@ -335,7 +335,7 @@
             <div class="card-content">
               <h2>${club.name}</h2>
               <p>${club.description}</p>
-              <a class="button" href="${club.text_address}" target="_blank">查看详情</a>
+              <a class="button" href="${club.text_address}" target="_blank">check more</a>
             </div>
           `;
           container.appendChild(card);
@@ -345,11 +345,10 @@
 </script>
 
 <script src="other/i18n.js"></script>
-
 <Script>
-  function change_lang(){
-      window.location.href = "index_en.html";
-  }
+    function change_lang(){
+        window.location.href = "index.html";
+    }
 </Script>
 
 </body>
