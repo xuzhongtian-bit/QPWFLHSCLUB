@@ -67,13 +67,15 @@
       },
       {
         "name": "合唱团",
-        "description": "description",
-        "image": ""
+        "description": "声动心弦，合唱音韵。",
+        "image": "../creativity/Phonology/Phonology logo.jpg",
+        "text_address": "../creativity/Phonology/Phonology info.html"
       },
       {
         "name": "乐队",
         "description": "description",
-        "image": ""
+        "image": "",
+        "text_address": "../creativity/The_Orcas/The_Orcas info.html"
       },
       {
         "name": "摄影社",
