@@ -61,8 +61,9 @@
       },
       {
         "name": "舞蹈社",
-        "description": "description",
-        "image": ""
+        "description": "让每一个热爱舞蹈的人找到属于自己的天地。",
+        "text_address": "../creativity/blueprint/blueprint info.html",
+        "image": "../creativity/blueprint/blueprint logo.jpg"
       },
       {
         "name": "合唱团",
