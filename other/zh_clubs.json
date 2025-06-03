@@ -74,7 +74,8 @@
       {
         "name": "乐队",
         "description": "description",
-        "image": ""
+        "image": "",
+        "text_address": "../creativity/The_Orcas/The_Orcas info.html"
       },
       {
         "name": "摄影社",
