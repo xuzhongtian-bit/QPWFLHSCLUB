@@ -110,8 +110,9 @@
       },
       {
         "name": "乒乓球社",
-        "description": "description",
-        "image": ""
+        "description": "以汗水浇灌热爱，以磨砺助力成长",
+        "image": "",
+        "text_address":"../activity/table_tennis_club info.html"
       }
     ],
     "S": [
@@ -146,8 +147,9 @@
       },
       {
         "name": "化学社",
-        "description": "description",
-        "image": ""
+        "description": "「世间最大的快乐，莫过于发现世人从未见过的新物质。 」",
+        "image": "",
+        "text_address":"../study/ChemXplore/ChemXplore info.html"
       },
       {
         "name": "经济社",
