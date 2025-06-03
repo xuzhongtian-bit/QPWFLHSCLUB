@@ -62,7 +62,8 @@
       {
         "name": "舞蹈社",
         "description": "让每一个热爱舞蹈的人找到属于自己的天地。",
-        "image": ""
+        "text_address": "../creativity/blueprint/blueprint info.html",
+        "image": "../creativity/blueprint/blueprint logo.jpg"
       },
       {
         "name": "合唱团",
@@ -134,7 +135,7 @@
     "St": [
       {
         "name": "编程社",
-        "description": "description",
+        "description": "用代码连接世界，用项目打磨成长",
         "image": "../study/codecraft/Codecraft logo.jpg",
         "text_address":"../study/codecraft/Codecraft info.html"
       },
