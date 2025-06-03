@@ -91,7 +91,8 @@
     {
       "name": "Codecraft",
       "description": "description",
-      "image": "club photo/Codecraft logo.jpg"
+      "image": "../study/codecraft/Codecraft logo.jpg",
+      "text_address": "../study/codecraft/Codecraft info_en.html"
     },
     {
       "name": "Astronomy Club",
