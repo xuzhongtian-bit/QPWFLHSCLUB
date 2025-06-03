@@ -83,8 +83,8 @@
     "A": [
       {
         "name": "足球社",
-        "description": "description",
-        "image": ""
+        "image": "../activity/QPWFL_FC/QPWFL_FC logo.jpg",
+        "text_address":"../activity/QPWFL_FC/QPWFL_FC info.html"
       },
       {
         "name": "排球社",
