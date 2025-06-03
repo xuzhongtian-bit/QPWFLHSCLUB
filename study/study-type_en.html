@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>体育活动</title>
+  <title>Stuty</title>
   <style>
     body {
        margin: 0;
@@ -204,39 +204,41 @@
   </style>
 </head>
 <body>
-  <header class="navbar">
-    <div class="navbar-top">
-    <div class="navbar-left">
-      <a href="https://qphs.shwfl.edu.cn/" target="_blank">
-        <img src="../other photo/WFL-logo.png" alt="WFL Logo" class="navbar-logo">
-      </a>
-      <div class="school-name-block">
-        <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
-        <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
-      </div>
-    </div>
-    <nav class="navbar-links">
-      <a href="../index.html">首页</a>
-      <div class="dropdown">
-        <a class="dropbtn">全部社团</a>
-        <div class="dropdown-content">
-          <a href="../creativity/creativity-type.html">创意艺术</a>
-          <a href="../activity/activity-type.html">体育活动</a>
-          <a href="../service/service-type.html">社会服务</a>
-          <a href="../study/study-type.html">学术类</a>
+    <header class="navbar">
+        <div class="navbar-top">
+    
+        <div class="navbar-left">
+            <a href="https://qphs.shwfl.edu.cn/" target="_blank">
+                <img src="../other photo/WFL-logo.png" alt="WFL Logo" class="navbar-logo">
+              </a>
+          <div class="school-name-block">
+            <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
+            <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
+          </div>
         </div>
-      </div>
-      <a href="">意见箱</a>
-      <a onclick="window.location.href = 'activity-type_en.html'">EN/中文</a>
-    </nav>
-    </div>
-  
-  </header>
+        <nav class="navbar-links">
+          <a href="../index_en.html">main page</a>
+          <div class="dropdown">
+            <a class="dropbtn">all clubs</a>
+            <div class="dropdown-content">
+              <a href="./creativity/creativity-type_en.html">Creativity</a>
+              <a href="./activity/activity-type_en.html">Activity</a>
+              <a href="./service/service-type_en.html">Service</a>
+              <a href="./study/study-type_en.html">Study</a>
+            </div>
+          </div>
+          <a href="">Suggestion box</a>
+          <a onclick="window.location.href='study-type.html'">EN/中文</a>
+        </nav>
+    
+        </div>
+        
+      </header>
   <div class="tab-buttons">
-    <a href="../creativity/creativity-type.html" class="tab-button" data-i18n="main:C-type">创意艺术</a>
-    <a class="tab-button active" data-i18n="main:A-type">体育活动</a>
-    <a href="../service/service-type.html" class="tab-button" data-i18n="main:S-type">社会服务</a>
-    <a href="../study/study-type.html" class="tab-button" data-i18n="main:St-type">学术类</a>
+    <a href="../creativity/creativity-type_en.html" class="tab-button" data-i18n="main:C-type">Creativity</a>
+    <a href="../activity/activity-type_en.html" class="tab-button" data-i18n="main:St-type">Activity</a>
+    <a href="../service/service-type_en.html" class="tab-button" data-i18n="main:S-type">Service</a>
+    <a class="tab-button active" data-i18n="main:A-type">Study</a>
   </div>
 
 <div class="grid" id="clubGrid">
@@ -244,61 +246,62 @@
 </div>
 
 <script>
-
-  fetch('../other/zh_clubs.json')
-    .then(response => response.json())
-    .then(data => {
-      const clubs = data["A"];
-      const container = document.getElementById("clubGrid");
-
-      clubs.forEach(club => {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <img src="${club.image}" alt="${club.name}">
-          <div class="card-content">
-            <h2>${club.name}</h2>
-            <p>${club.description}</p>
-            <div class="button" onclick="window.location.href='${club.text_address}'">了解更多</div>
-          </div>
-        `;
-        container.appendChild(card);
+  
+    fetch('../other/en_clubs.json')
+      .then(response => response.json())
+      .then(data => {
+        const clubs = data["St"];
+        const container = document.getElementById("clubGrid");
+  
+        clubs.forEach(club => {
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `
+            <img src="${club.image}" alt="${club.name}">
+            <div class="card-content">
+              <h2>${club.name}</h2>
+              <p>${club.description}</p>
+              <div class="button" onclick="window.location.href='${club.text_address}'">check more</div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      })
+      .catch(error => {
+        console.error("Failed to load the club data:", error);
       });
-    })
-    .catch(error => {
-      console.error("加载社团数据失败:", error);
+  
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+  
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+  
+        button.classList.add('active');
+        document.getElementById(button.dataset.tab).classList.add('active');
+      });
     });
-
-  const tabButtons = document.querySelectorAll('.tab-button');
-  const tabContents = document.querySelectorAll('.tab-content');
-
-  tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
-
-      button.classList.add('active');
-      document.getElementById(button.dataset.tab).classList.add('active');
+  
+    const container = document.getElementById("clubGrid");
+  
+    clubs.forEach(club => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <img src="${club.image}" alt="${club.name}">
+        <div class="card-content">
+          <h2>${club.name}</h2>
+          <p>${club.description}</p>
+          <div class="button" onclick="window.location.href='${club.text_address}'">check more</div>
+        </div>
+      `;
+      
+      container.appendChild(card);
     });
-  });
+  </script>
 
-  const container = document.getElementById("clubGrid");
-
-  clubs.forEach(club => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
-      <img src="${club.image}" alt="${club.name}">
-      <div class="card-content">
-        <h2>${club.name}</h2>
-        <p>${club.description}</p>
-        <div class="button" onclick="window.location.href='${club.text_address}'">了解更多</div>
-      </div>
-    `;
-    
-    container.appendChild(card);
-  });
-</script>
 
 
 </body>
