@@ -16,8 +16,8 @@
       "image": ""
     },
     {
-      "name": "Dance Club",
-      "description": "description",
+      "name": "Blueprint",
+      "description": "Let every dance lover find their own space.",
       "image": ""
     },
     {
@@ -39,8 +39,9 @@
   "A": [
     {
       "name": "Soccer Club",
-      "description": "description",
-      "image": ""
+      "description": "Pursuing dreams on the green pitch, vibrant youth",
+      "image": "../activity/QPWFL_FC/QPWFL_FC logo.jpg",
+      "text_address":"../activity/QPWFL_FC/QPWFL_FC info.html"
     },
     {
       "name": "Volleyball Club",
