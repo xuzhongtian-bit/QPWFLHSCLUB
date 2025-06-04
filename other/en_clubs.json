@@ -46,8 +46,9 @@
     },
     {
       "name": "Volleyball Club",
-      "description": "description",
-      "image": ""
+      "description": "Every leap counts.",
+      "image": "../activity/Volleyball_club/Volleyball_club logo.jpg",
+      "text_address": "../activity/Volleyball_club/Volleyball_club info_en.html"
     },
     {
       "name": "Basketball Club",
@@ -66,8 +67,9 @@
     },
     {
       "name": "Table Tennis Club",
-      "description": "description",
-      "image": ""
+      "description": "With sweat doth we water passion’s root; by toil and temper is young growth made stout.",
+      "image": "none",
+      "text_address": "../activity/table_tennis_club/table_tennis_club info_en.html"
     }
   ],
   "S": [
