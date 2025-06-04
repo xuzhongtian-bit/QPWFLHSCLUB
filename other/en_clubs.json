@@ -27,9 +27,10 @@
       "image": ""
     },
     {
-      "name": "Band",
-      "description": "description",
-      "image": ""
+      "name": "The Orcas",
+      "description": "Styles have no boundaries, music thrives together.",
+      "image": "none",
+      "text_address": "../creativity/The_Orcas/The_Orcas info_en.html"
     },
     {
       "name": "Photography Club",
@@ -73,15 +74,12 @@
     }
   ],
   "S": [
+  
     {
-      "name": "Urban Planning Research Club",
-      "description": "description",
-      "image": ""
-    },
-    {
-      "name": "Coffee Club",
-      "description": "description",
-      "image": ""
+      "name": "ORCAFE",
+      "description": "no description",
+      "image": "../service/ORCAFE/ORCAFE logo.jpg",
+      "text_address": "../service/ORCAFE/ORCAFE info_en.html"
     },
     {
       "name": "Wishers",
