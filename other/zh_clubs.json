@@ -51,8 +51,9 @@
       },
       {
         "name": "戏剧社",
-        "description": "description",
-        "image": ""
+        "description": "舞台即结界",
+        "image": "../creativity/R&J/R&J logo.jpg",
+        "text_address": "../creativity/R&J/R&J info.html"
       },
       {
         "name": "非遗手工社",
