@@ -22,9 +22,10 @@
       "text_address": "../creativity/BLUEPRINT/BLUEPRINT info_en.html"
     },
     {
-      "name": "Choir",
-      "description": "description",
-      "image": ""
+      "name": "Phonology Choir",
+      "description": "Weave Phonology, Move Souls Together.",
+      "image": "../creativity/Phonology/Phonology logo.jpg",
+      "text_address": "../creativity/Phonology/Phonology info_en.html"
     },
     {
       "name": "The Orcas",
@@ -83,8 +84,9 @@
     },
     {
       "name": "Wishers",
-      "description": "description",
-      "image": ""
+      "description": "with love, for every elder's tomorrow",
+      "image": "../service/Wishers/Wishers logo.jpg",
+      "text_address": "../service/Wishers/Wishers info_en.html"
     }
   ],
   "St": [
