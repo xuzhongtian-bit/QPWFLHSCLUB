@@ -92,7 +92,8 @@
       {
         "name": "排球社",
         "description": "description",
-        "image": ""
+        "image": "../activity/Volleyball_club/Volleyball_club logo.jpg",
+        "text_address": "../activity/Volleyball_club/Volleyball_club info.html"
       },
       {
         "name": "篮球社",
