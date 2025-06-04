@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>排球社团介绍</title>
+  <link rel="stylesheet" href="../../other/all style.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      margin: 0;
+      padding: 10px 30px;
+      height: 100px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+    .navbar-top {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-logo {
+      height: 100px;
+      margin-right: 16px;
+      
+    }
+    .school-name-block {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    .school-cn {
+      font-size: 18px;
+      font-weight: bold;
+      color: #444;
+    }
+    .school-en {
+      font-size: 12px;
+      color: #777;
+      text-transform: uppercase;
+    }
+    .navbar-links {
+      display: flex;
+      margin-left: auto;
+    }
+    .navbar-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #242525;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar-links a:hover {
+      color: #0056b3;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      padding: 10px;
+      color: #242525;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    .dropbtn:hover {
+      color: #0056b3;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      z-index: 1001;
+      border-radius: 8px;
+      overflow: hidden;
+      top: 100%;
+      left: 0;
+    }
+    .dropdown-content a {
+      color: #242525;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+      color: #007bff;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .top-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .leaders {
+      flex: 1;
+    }
+    .club-logo {
+      width: 120px;
+      height: auto;
+      margin-left: 20px;
+      border-radius: 8px;
+    }
+    .photo-horizon {
+        width: 99%;
+    }
+    .photo-verticle {
+        width: 49%;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-top">
+
+    <div class="navbar-left">
+      <img src="../../other photo/WFL-logo.png" alt="WFL Logo" class="navbar-logo">
+      <div class="school-name-block">
+        <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
+        <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
+      </div>
+    </div>
+    <nav class="navbar-links">
+      <a href="../../index.html">首页</a>
+      <div class="dropdown">
+        <a class="dropbtn">全部社团</a>
+        <div class="dropdown-content">
+          <a href="../../creativity/creativity-type.html">创意艺术</a>
+          <a href="../../activity/activity-type.html">体育活动</a>
+          <a href="../../service/service-type.html">社会服务</a>
+          <a href="../../study/study-type.html">学术类</a>
+        </div>
+      </div>
+      <a href="">意见箱</a>
+      <a onclick="switchLanguage();switchLanguage_inJson()">EN/中文</a>
+    </nav>
+
+    </div>
+
+  </header>
+  
+  <div class="container">
+    <h1>排球社团介绍</h1>
+    <div class="top-info">
+      <div class="leaders">
+        <p><strong>社长：</strong>韩宗陈</p>
+        <p><strong>副社长：</strong>张晏 陈泽轩</p>
+        <p><strong>指导老师：</strong>孔令德</p>
+      </div>
+      <img src="Volleyball_club logo.jpg" class="club-logo">
+    </div>
+    
+    <p><strong>社团简介：</strong></p>
+    <ul>
+      <li>排球社团是一个集竞技训练、体能锻炼与团队合作于一体的学生组织，面向所有对排球运动感兴趣的同学开放。社团致力于打造一个积极进取、技战术兼备的排球训练平台，帮助成员在运动中提升自我、收获友谊。社团每周定期组织训练活动，内容涵盖基础传球、发球、扣球、拦网等技术练习，同时辅以小组战术演练与实战对抗，满足不同水平成员的成长需求。在轻松愉快的氛围中，大家既能掌握技能，也能增强团队意识与反应能力。</li>
+    </ul>
+    <p><strong>精彩瞬间：</strong></p>
+    <img src="image.png" class="photo-verticle">
+    <img src="image copy 1.png" class="photo-verticle">
+    <img src="image copy 2.png" class="photo-horizon">
+    <img src="image copy 3.png" class="photo-verticle">
+    <img src="image copy 5.png" class="photo-verticle">
+    <img src="image copy 4.png" class="photo-horizon">
+    <img src="image copy 6.png" class="photo-horizon">
+    <img src="image copy 7.png" class="photo-verticle">
+    <img src="image copy 8.png" class="photo-verticle">
+    <img src="image copy 9.png" class="photo-verticle">
+    <img src="image copy 10.png" class="photo-verticle">
+  </div>
+</body>
+</html>
