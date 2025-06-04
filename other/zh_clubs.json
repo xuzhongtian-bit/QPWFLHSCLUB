@@ -119,11 +119,6 @@
     ],
     "S": [
       {
-        "name": "城市规划研习社",
-        "description": "description",
-        "image": ""
-      },
-      {
         "name": "咖啡社",
         "description": "description",
         "image": "../service/ORCAFE/ORCAFE logo.jpg",
@@ -132,7 +127,7 @@
       {
         "name": "Wishers",
         "description": "爱在夕望",
-        "image": "",
+        "image": "../service/Wishers/Wishers logo.jpg",
         "text_address":"../service/ Wishers/Wishers info.html"
       }
     ],
@@ -156,8 +151,9 @@
       },
       {
         "name": "经济社",
-        "description": "description",
-        "image": ""
+        "description": "'经'彩人生，'济'不可失！",
+        "image": "",
+        "text_address": "../study/WFL_Econ._club/WFL_Econ._club info.html"
       },
       {
         "name": "生物社",
