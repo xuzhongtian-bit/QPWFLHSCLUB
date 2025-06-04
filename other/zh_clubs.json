@@ -73,7 +73,6 @@
       },
       {
         "name": "乐队",
-        "description": "风格无界，音乐共生",
         "image": "",
         "text_address": "../creativity/The_Orcas/The_Orcas info.html"
       },
@@ -92,9 +91,8 @@
       },
       {
         "name": "排球社",
-        "description": "每一次跃起都算数。",
-        "image": "../activity/Volleyball_club/Volleyball_club logo.jpg",
-        "text_address":"../activity/Volleyball_club/Volleyball_club info.html"
+        "description": "description",
+        "image": ""
       },
       {
         "name": "篮球社",
@@ -121,6 +119,11 @@
     ],
     "S": [
       {
+        "name": "城市规划研习社",
+        "description": "description",
+        "image": ""
+      },
+      {
         "name": "咖啡社",
         "description": "description",
         "image": "../service/ORCAFE/ORCAFE logo.jpg",
@@ -128,8 +131,9 @@
       },
       {
         "name": "Wishers",
-        "description": "description",
-        "image": ""
+        "description": "爱在夕望",
+        "image": "",
+        "text_address":"../service/ Wishers/Wishers info.html"
       }
     ],
     "St": [
