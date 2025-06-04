@@ -73,7 +73,7 @@
       },
       {
         "name": "乐队",
-        "description": "description",
+        "description": "风格无界，音乐共生",
         "image": "",
         "text_address": "../creativity/The_Orcas/The_Orcas info.html"
       },
@@ -92,8 +92,9 @@
       },
       {
         "name": "排球社",
-        "description": "description",
-        "image": ""
+        "description": "每一次跃起都算数。",
+        "image": "../activity/Volleyball_club/Volleyball_club logo.jpg",
+        "text_address":"../activity/Volleyball_club/Volleyball_club info.html"
       },
       {
         "name": "篮球社",
