@@ -12,9 +12,10 @@
       "text_address": "creativity/R&J/R&J info_en.html"
     },
     {
-      "name": "Intangible Heritage Crafts Club",
-      "description": "description",
-      "image": ""
+      "name": "HandiZone",
+      "description": "none",
+      "image": "../other photo/什么也没留下.jpg",
+      "text_address": "../creativity/HandiZone/HandiZone info_en.html"
     },
     {
       "name": "Blueprint",
@@ -125,9 +126,10 @@
       "image": ""
     },
     {
-      "name": "Debate Club",
-      "description": "description",
-      "image": ""
+      "name": "QPWFLHS Chinese&English Debate Team",
+      "description": "Proud to Propose",
+      "image": "",
+      "text_address": "../study/QPWFLHS Chinese&English Debate Team/QPWFLHS Chinese&English Debate Team info_en.html"
     }
   ]
 }
