@@ -51,8 +51,9 @@
       },
       {
         "name": "戏剧社",
-        "description": "description",
-        "image": ""
+        "description": "舞台即结界",
+        "image": "../creativity/R&J/R&J logo.jpg",
+        "text_address": "../creativity/R&J/R&J info.html"
       },
       {
         "name": "非遗手工社",
@@ -74,7 +75,8 @@
       },
       {
         "name": "乐队",
-        "image": "",
+        "description": "风格无界，音乐共生",
+        "image": "../other photo/什么也没留下.jpg",
         "text_address": "../creativity/The_Orcas/The_Orcas info.html"
       },
       {
