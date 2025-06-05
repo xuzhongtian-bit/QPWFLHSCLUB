@@ -35,12 +35,6 @@
       "description": "description",
       "image": "",
       "text_address":""
-    },
-    {
-      "name": "社团7",
-      "description": "description",
-      "image": "",
-      "text_address":""
     }
   ],
     "C": [
@@ -58,7 +52,7 @@
       {
         "name": "非遗手工社",
         "description": "description",
-        "image": "",
+        "image": "../creativity/HandiZone/HandiZone logo.jpg",
         "text_address":"../creativity/HandiZone/HandiZone info.html" 
       },
       {
