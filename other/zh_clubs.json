@@ -58,7 +58,8 @@
       {
         "name": "非遗手工社",
         "description": "description",
-        "image": ""
+        "image": "",
+        "text_address":"../creativity/HandiZone/HandiZone info.html" 
       },
       {
         "name": "舞蹈社",
@@ -170,8 +171,9 @@
       },
       {
         "name": "辩论社",
-        "description": "description",
-        "image": ""
+        "description": "青云直上，辩场悟道",
+        "image": "",
+        "text_address":"../study/QPWFLHS Chinese&English Debate Team/QPWFLHS Chinese&English Debate Team info.html"
       }
     ]
   }
