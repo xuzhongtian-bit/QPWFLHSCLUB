@@ -30,7 +30,7 @@
     {
       "name": "The Orcas",
       "description": "Styles have no boundaries, music thrives together.",
-      "image": "none",
+      "image": "../other photo/什么也没留下.jpg",
       "text_address": "../creativity/The_Orcas/The_Orcas info_en.html"
     },
     {
@@ -63,14 +63,15 @@
       "image": ""
     },
     {
-      "name": "Badminton Club",
-      "description": "description",
-      "image": ""
+      "name": "QPWFLBC",
+      "description": "Through each swing of the racket, we temper our will; through every match, we accumulate growth.",
+      "image": "../activity/QPWFL_BC/QPWFL_BC logo.jpg",
+      "text_address": "../activity/QPWFL_BC/QPWFL_BC info_en.html"
     },
     {
       "name": "Table Tennis Club",
       "description": "With sweat doth we water passion’s root; by toil and temper is young growth made stout.",
-      "image": "none",
+      "image": "../activity/table_tennis_club/table_tennis_club logo.jpg",
       "text_address": "../activity/table_tennis_club/table_tennis_club info_en.html"
     }
   ],
@@ -108,9 +109,9 @@
       "text_address":"../study/ChemXplore/ChemXplore info_en.html"
     },
     {
-      "name": "Economics Club",
-      "description": "description",
-      "image": ""
+      "name": "WFL Econ. club",
+      "description": "'Econ' Your Life, Don't Miss the 'Ohmics'!",
+      "image": "../other photo/什么也没留下.jpg"
     },
     {
       "name": "Biology Club",
