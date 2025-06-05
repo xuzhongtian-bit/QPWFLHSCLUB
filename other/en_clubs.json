@@ -6,9 +6,10 @@
       "image": ""
     },
     {
-      "name": "Drama Club",
-      "description": "description",
-      "image": ""
+      "name": "R&J",
+      "description": "The stage The medium",
+      "image": "../creativity/R&J/R&J logo.jpg",
+      "text_address": "creativity/R&J/R&J info_en.html"
     },
     {
       "name": "Intangible Heritage Crafts Club",
