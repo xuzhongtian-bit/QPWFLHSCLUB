@@ -30,7 +30,9 @@ if (SubmitButton) {
         user: usernameBox.value,
         content: TextArea.value
     })
-    .then(response => console.log(response.data))
-    .catch(error => console.error(error));
+    .then( function(response) { alert("成功 Success")}) 
+    .catch(error => {
+        alert("失败 Failed: " + (error.response?.data?.message || error.message))
+    })
     })
 }
