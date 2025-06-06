@@ -88,14 +88,15 @@
       },
       {
         "name": "排球社",
-        "description": "description",
+        "description": " 每一次跃起都算数。",
         "image": "../activity/Volleyball_club/Volleyball_club logo.jpg",
         "text_address": "../activity/Volleyball_club/Volleyball_club info.html"
       },
       {
         "name": "篮球社",
-        "description": "description",
-        "image": ""
+        "description": "无兄弟，不篮球！一起上场，全力以赴！",
+        "image": "../activity/QPWFLBC/QPWFLBC logo.jpg",
+        "text_address": "../activity/QPWFLBC/QPWFLBC info.html"
       },
       {
         "name": "击剑社",
