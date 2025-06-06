@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>篮球社团介绍</title>
+  <link rel="stylesheet" href="../../other/all style.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      margin: 0;
+      padding: 10px 30px;
+      height: 100px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+    .navbar-top {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-logo {
+      height: 100px;
+      margin-right: 16px;
+      
+    }
+    .school-name-block {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    .school-cn {
+      font-size: 18px;
+      font-weight: bold;
+      color: #444;
+    }
+    .school-en {
+      font-size: 12px;
+      color: #777;
+      text-transform: uppercase;
+    }
+    .navbar-links {
+      display: flex;
+      margin-left: auto;
+    }
+    .navbar-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #242525;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar-links a:hover {
+      color: #0056b3;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      padding: 10px;
+      color: #242525;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    .dropbtn:hover {
+      color: #0056b3;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      z-index: 1001;
+      border-radius: 8px;
+      overflow: hidden;
+      top: 100%;
+      left: 0;
+    }
+    .dropdown-content a {
+      color: #242525;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+      color: #007bff;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .top-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .leaders {
+      flex: 1;
+    }
+    .club-logo {
+      width: 120px;
+      height: auto;
+      margin-left: 20px;
+      border-radius: 8px;
+    }
+    .photo-horizon {
+        width: 99%;
+    }
+    .photo-verticle {
+        width: 49%;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-top">
+
+    <div class="navbar-left">
+      <img src="../../other photo/WFL-logo.png" alt="WFL Logo" class="navbar-logo">
+      <div class="school-name-block">
+        <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
+        <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
+      </div>
+    </div>
+    <nav class="navbar-links">
+      <a href="../../index.html">首页</a>
+      <div class="dropdown">
+        <a class="dropbtn">全部社团</a>
+        <div class="dropdown-content">
+          <a href="../../creativity/creativity-type.html">创意艺术</a>
+          <a href="../../activity/activity-type.html">体育活动</a>
+          <a href="../../service/service-type.html">社会服务</a>
+          <a href="../../study/study-type.html">学术类</a>
+        </div>
+      </div>
+      <a href="/suggestion/suggestion.html">意见箱</a>
+      <a onclick="window.location.href='ORCAFE info_en.html'">EN/中文</a>
+    </nav>
+
+    </div>
+
+  </header>
+  
+  <div class="container">
+    <h1>篮球社团介绍</h1>
+    <div class="top-info">
+      <div class="leaders">
+        <p><strong>社长：</strong>何泽轩</p>
+        <p><strong>副社长：</strong>黄金榜</p>
+        <p><strong>指导老师：</strong>王凯</p>
+      </div>
+      <img src="QPWFLBC logo.jpg" class="club-logo">
+    </div>
+    
+    <p><strong>社团简介：</strong></p>
+    <ul>
+      <li>Yo！热爱篮球的朋友们看过来！在青春的赛场上，篮球就是热血与梦想的代名词！我们 QPWFLBC篮球社团秉持 “无兄弟，不篮球！一起上场，全力以赴” 的宗旨，就是要打造一个超酷超多元的篮球天地，陪你享受当下，还一起规划超燃的未来！</li>
+      <li>咱们社团的日常训练超有料！手把手教学，从 “dribbling（运球）”“shooting（投篮）” 这些基础技能，到精妙的战术配合，通通安排！体能训练也不含糊，帮你把身体素质拉满！平时社团还会定期举办内部联赛，大家在球场上一较高下；校内部篮球班赛、校际交流赛这些赛事，我们也从不缺席，主打一个在实战中疯狂涨球技！Let's go！</li>
+      <li>再和大家剧透一下未来计划！三分大赛、技巧挑战赛这些超有趣的特色活动已经在筹备中啦，用趣味竞技激发你的无限潜力！我们还在积极联络更多国际学校，筹备友谊赛，搭建超酷的跨文化篮球交流平台！和不同风格的对手切磋，既能拓宽视野，又能让你的技术更上一层楼，想想就超激动！</li>
+      <li>加入我们社团，好处多多！不仅有固定场地、专业装备，让你尽情挥洒汗水，还能和各路高手过招，快速提升球技！更重要的是，能结识一群志同道合的伙伴，在团队协作中一起成长！社团组织超有序，社长统筹全局，副社长分管事务，有任何问题都能及时解决！</li>
+      <li>还在等什么？热爱篮球的你，快加入我们！在日常训练和赛事中尽情挥洒汗水，在未来的精彩活动里绽放光芒！Let's go！一起书写属于我们的热血篮球篇章！</li>
+    </ul>
+  </div>
+</body>
+</html>
