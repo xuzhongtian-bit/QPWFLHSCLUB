@@ -56,8 +56,9 @@
     },
     {
       "name": "Basketball Club",
-      "description": "description",
-      "image": ""
+      "description": "No brotherhood, no basketball! Let's take the court and go all out!",
+      "image": "",
+      "text_address": "../activity/QPWFLBC/QPWFLBC info_en.html"
     },
     {
       "name": "Fencing Club",
@@ -122,8 +123,9 @@
     },
     {
       "name": "Psychology Club",
-      "description": "description",
-      "image": ""
+      "description": "dive into minds,sail into souls",
+      "image": "../study/QPWFLPSY/QPWFLPSY logo.png",
+      "text_address": "../study/QPWFLPSY/QPWFLPSY info_en.html"
     },
     {
       "name": "QPWFLHS Chinese&English Debate Team",
