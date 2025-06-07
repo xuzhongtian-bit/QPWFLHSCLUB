@@ -75,8 +75,9 @@
       },
       {
         "name": "摄影社",
-        "description": "description",
-        "image": ""
+        "description": "用光影写诗，让瞬间成永恒",
+        "image": "../creativity/Shutter story/Shutter story logo.jpg",
+        "text_address": "../creativity/Shutter story/Shutter story info.html"
       }
     ],
     "A": [
