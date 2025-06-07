@@ -40,8 +40,9 @@
     "C": [
       {
         "name": "动漫社",
-        "description": "description",
-        "image": ""
+        "description": "柚影漫卷，绮梦长存 ",
+        "image": "../creativity/Yuzu_Anime/Yuzu_Anime logo.jpg",
+        "text_address": "../creativity/Yuzu_Anime/Yuzu_Anime info.html"
       },
       {
         "name": "戏剧社",
