@@ -2,8 +2,9 @@
   "C": [
     {
       "name": "Anime Club",
-      "description": "description",
-      "image": ""
+      "description": "Citrus petals dance, our fantasia stays!",
+      "image": "../creativity/Yuzu_Anime/Yuzu_Anime logo.jpg",
+      "text_address": "../creativity/Yuzu_Anime/Yuzu_Anime info_en.html"
     },
     {
       "name": "R&J",
