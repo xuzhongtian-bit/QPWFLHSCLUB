@@ -3,37 +3,37 @@
     {
       "name": "社团1",
       "description": "description",
-      "image": "",
-      "text_address":"../study/codecraft/Codecraft info.html"
+      "image": "../other photo/敬请期待.jpg",
+      "text_address":""
     },
     {
       "name": "社团2",
       "description": "description",
-      "image": "",
+      "image": "../other photo/敬请期待.jpg",
       "text_address":""
     },
     {
       "name": "社团3",
       "description": "description",
-      "image": "",
+      "image": "../other photo/敬请期待.jpg",
       "text_address":""
     },
     {
       "name": "社团4",
       "description": "description",
-      "image": "",
+      "image": "../other photo/敬请期待.jpg",
       "text_address":""
     },
     {
       "name": "社团5",
       "description": "description",
-      "image": "",
+      "image": "../other photo/敬请期待.jpg",
       "text_address":""
     },
     {
       "name": "社团6",
       "description": "description",
-      "image": "",
+      "image": "../other photo/敬请期待.jpg",
       "text_address":""
     }
   ],
