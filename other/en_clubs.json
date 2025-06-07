@@ -120,8 +120,9 @@
     },
     {
       "name": "Biology Club",
-      "description": "description",
-      "image": ""
+      "description": "Into biology, into nature, into society",
+      "image": "",
+      "text_address": "../study/BIO/BIO info_en.html"
     },
     {
       "name": "Psychology Club",

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>ORCAFE</title>
+  <link rel="stylesheet" href="../../other/all style.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      margin: 0;
+      padding: 10px 30px;
+      height: 100px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+    .navbar-top {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-logo {
+      height: 100px;
+      margin-right: 16px;
+      
+    }
+    .school-name-block {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    .school-cn {
+      font-size: 18px;
+      font-weight: bold;
+      color: #444;
+    }
+    .school-en {
+      font-size: 12px;
+      color: #777;
+      text-transform: uppercase;
+    }
+    .navbar-links {
+      display: flex;
+      margin-left: auto;
+    }
+    .navbar-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #242525;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar-links a:hover {
+      color: #0056b3;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      padding: 10px;
+      color: #242525;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    .dropbtn:hover {
+      color: #0056b3;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      z-index: 1001;
+      border-radius: 8px;
+      overflow: hidden;
+      top: 100%;
+      left: 0;
+    }
+    .dropdown-content a {
+      color: #242525;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+      color: #007bff;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .top-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .leaders {
+      flex: 1;
+    }
+    .club-logo {
+      width: 120px;
+      height: auto;
+      margin-left: 20px;
+      border-radius: 8px;
+    }
+    .photo-horizon {
+        width: 99%;
+    }
+    .photo-verticle {
+        width: 49%;
+    }
+  </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-top">
+    
+        <div class="navbar-left">
+          <img src="../../other photo/WFL-logo.png" alt="WFL Logo" class="navbar-logo">
+          <div class="school-name-block">
+            <div class="school-cn">上 海 青 浦 区 世 外 高 级 中 学</div>
+            <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
+          </div>
+        </div>
+        <nav class="navbar-links">
+          <a href="../../index.html">Main Page</a>
+          <div class="dropdown">
+            <a class="dropbtn">All clubs</a>
+            <div class="dropdown-content">
+              <a href="../../creativity/creativity-type_en.html">Creativity</a>
+              <a href="../../activity/activity-type_en.html">Activity</a>
+              <a href="../../service/service-type_en.html">Service</a>
+              <a href="../../study/study-type_en.html">Study</a>
+            </div>
+          </div>
+          <a href="">Suggestion box</a>
+          <a onclick="window.location.href='BIO info.html'">EN/中文</a>
+        </nav>
+    
+        </div>
+    
+      </header>
+  
+  <div class="container">
+    <h1>ORACFE descripsion</h1>
+    <div class="top-info">
+      <div class="leaders">
+        <p><strong>proprieter：</strong>Angelina</p>
+        <p><strong>deputy director：</strong>Sherry Vivian</p>
+        <p><strong>adviser：</strong>Ellen</p>
+      </div>
+      <img src="ORCAFE logo.jpg" class="club-logo">
+    </div>
+    
+    <p><strong>description：</strong></p>
+    <ul>
+      <li>"Interested in biology? Want to seek the truth of living beings? Join us in BIO!<br>
+        <br>
+        Biology is the study of your body, the study of the world around you, and the pursuit of truth. In BIO, we’ll unwrap the unknown and peel back the shell of mystery. Why do you experience emotional changes so easily as a teenager? Why do you gain weight when eating high-fat foods? Explore biology with us!<br>
+        <br>
+        Try understanding the structure of nature hands-on! Why not make specimens yourself? Getting your hands dirty is the best way to appreciate the charm of anatomy and nature. See how brilliantly nature designs such marvels! We’ve already created butterfly specimens—now let’s innovate together!<br>
+        <br>
+        As humans, we shape society. That’s why engagement is essential. BIO has run projects on nutrition, like researching the sugar content in everyday drinks (find our display in the canteen!). We’ve also partnered with Symbiosis—an organization uniting biology clubs across schools—to create a collaborative forum. With them, we launched ""The Homeless Angel Rescue Program"" to aid stray animals. Let’s improve society through biology!<br>
+        <br>
+        Join us. Step into biology, nature, and society!
+        
+        "</li>
+    </ul>
+    <p><strong>splendid moment：</strong></p>
+    <img src="541748757031_.pic.jpg" class="photo-horizon">
+    <img src="551748757032_.pic.jpg" class="photo-verticle">
+    <img src="561748757033_.pic.jpg" class="photo-verticle">
+    <img src="571748757034_.pic.jpg" class="photo-verticle">
+    <img src="581748757035_.pic.jpg" class="photo-verticle">
+    <img src="591748757037_.pic.jpg" class="photo-verticle">
+    <img src="601748757037_.pic.jpg" class="photo-verticle">
+  </div>
+</body>
+</html>
