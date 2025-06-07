@@ -158,7 +158,8 @@
       {
         "name": "生物社",
         "description": "description",
-        "image": ""
+        "image": "",
+        "text_address":"../study/BIO/BIO info.html"
       },
       {
         "name": "心理社",
