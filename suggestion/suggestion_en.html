@@ -5,9 +5,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suggestion Box</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #f7f7f7;
+            background-image: url('../other photo/leaves.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            margin: 0;
+            padding: 10px 30px;
+            height: 100px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        .navbar-top {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-logo {
+            height: 100px;
+            margin-right: 16px;
+        }
+        .school-name-block {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        .school-cn {
+            font-size: 18px;
+            font-weight: bold;
+            color: #444;
+        }
+        .school-en {
+            font-size: 12px;
+            color: #777;
+            text-transform: uppercase;
+        }
+        .navbar-links {
+            display: flex;
+            margin-left: auto;
+        }
+        .navbar-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #242525;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .navbar-links a:hover {
+            color: #0056b3;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            padding: 10px;
+            color: #242525;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .dropbtn:hover {
+            color: #0056b3;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            z-index: 1001;
+            border-radius: 8px;
+            overflow: hidden;
+            top: 100%;
+            left: 0;
+        }
+        .dropdown-content a {
+            color: #242525;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+            color: #007bff;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .button {
+            display: inline-block;
+            background-color: #213cf1;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 14px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .button:hover {
+            background-color: #388e3c;
+        }
+    </style>
 </head>
 
 <body>
+    <header class="navbar">
+        <div class="navbar-top">
+    
+        <div class="navbar-left">
+          <a href="https://qphs.shwfl.edu.cn/" target="_blank">
+            <img src="../other photo/WFL-logo.png" alt="WFL Logo" class="navbar-logo">
+          </a>
+          <div class="school-name-block">
+            <div class="school-cn" align="left">上 海 青 浦 区 世 外 高 级 中 学</div>
+            <div class="school-en">SHANGHAI QINGPU WORLD FOREIGN LANGUAGE HIGH SCHOOL</div>
+          </div>
+        </div>
+        <nav class="navbar-links">
+          <a href="../index.html"> Main Page</a>
+          <div class="dropdown">
+            <a class="dropbtn">All Clubs</a>
+            <div class="dropdown-content">
+              <a href="../creativity/creativity-type.html">Creativity</a>
+              <a href="../activity/activity-type.html">Activity</a>
+              <a href="../service/service-type.html">Service</a>
+              <a href="../study/study-type.html">Study</a>
+            </div>
+          </div>
+          
+          <a href="suggestion.html">Suggestion Box</a>
+          <a onclick="window.location.href='index_en.html'">EN/中文</a>
+          
+        </nav>
+    
+    </div>
     <script src="/other/axios.min.js"></script>
 
     <!-- <input id="Anonymous" type="checkbox" name="Anonymous"> 
