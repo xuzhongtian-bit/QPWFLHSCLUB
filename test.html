@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>移动端警告栏</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* 警告栏样式 */
+    .warning-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ff4d4f;
+      color: white;
+      text-align: center;
+      padding: 12px 20px;
+      font-size: 16px;
+      z-index: 9999;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      display: none; /* 默认隐藏 */
+    }
+
+    .warning-bar .close-btn {
+      position: absolute;
+      right: 16px;
+      top: 12px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .content {
+      padding-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 警告栏 -->
+  <div class="warning-bar" id="warningBar">
+    ⚠ 当前为触摸设备，部分功能可能在移动端体验不佳。
+    <span class="close-btn" onclick="document.getElementById('warningBar').style.display='none'">知道了</span>
+  </div>
+
+  <!-- 页面内容 -->
+  <div class="content">
+    <h1>欢迎访问</h1>
+    <p>这里是你的网页内容。</p>
+  </div>
+
+  <script>
+    // 检测是否为触摸设备
+    function detectDeviceType() {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+
+        if (/android/i.test(userAgent)) {
+            return "Android";
+        }
+
+
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            return "iOS";
+        }
+
+        if (/windows phone/i.test(userAgent)) {
+            return "Windows Phone";
+        }
+        return "Desktop";
+    }
+
+    const deviceType = detectDeviceType();
+
+    console.log("Device Type: ", deviceType);
+
+    if (detectDeviceType() != "Desktop") {
+      document.getElementById('warningBar').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

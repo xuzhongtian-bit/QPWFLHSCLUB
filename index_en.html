@@ -267,12 +267,56 @@
       color: #888;
       font-style: italic;
     }
+
+
+    .warning-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff4d4f;
+    color: white;
+    text-align: center;
+    padding: 12px 48px 12px 20px; /* 右侧留更宽空间 */
+    font-size: 16px;
+    z-index: 9999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: none;
+    box-sizing: border-box; /* 确保 padding 不导致溢出 */
+  }
+
+  .warning-bar .close-btn {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    transition: background 0.2s ease;
+  }
+
+  .warning-bar .close-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
   </style>
 </head>
 <body>
   <header class="navbar">
-    <div class="navbar-top">
+    <div class="warning-bar" id="warningBar">
+      ⚠ You'd better opening this page in PC
+      <span class="close-btn" onclick="document.getElementById('warningBar').style.display='none'">X</span>
+    </div>
+  </div>
 
+    <div class="navbar-top">
+      
     <div class="navbar-left">
       <a href="https://qphs.shwfl.edu.cn/" target="_blank">
         <img src="other photo/WFL-logo.png" alt="WFL Logo" class="navbar-logo">
