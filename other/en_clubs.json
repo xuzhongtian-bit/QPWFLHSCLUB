@@ -64,8 +64,9 @@
     },
     {
       "name": "Fencing Club",
-      "description": "description",
-      "image": ""
+      "description": "Believe in what I do",
+      "image": "../activity/fencing_club/fencing_club logo.jpg",
+      "text_address": "../activity/fencing_club/fencing_club info_en.html"
     },
     {
       "name": "QPWFLBC",
