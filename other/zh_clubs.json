@@ -102,8 +102,9 @@
       },
       {
         "name": "击剑社",
-        "description": "description",
-        "image": ""
+        "description": "信我所行",
+        "image": "../activity/fencing_club/fencing_club logo.jpg",
+        "text_address": "../activity/fencing_club/fencing_club info.html"
       },
       {
         "name": "羽毛球社",
