@@ -142,8 +142,9 @@
       },
       {
         "name": "天文社",
-        "description": "description",
-        "image": ""
+        "description": "借天文之手，展物理之妙",
+        "image": "../study/Astronomy_Club/Astronomy_Club logo.jpg",
+        "text_address": "../study/Astronomy_Club/Astronomy_Club info.html"
       },
       {
         "name": "化学社",
