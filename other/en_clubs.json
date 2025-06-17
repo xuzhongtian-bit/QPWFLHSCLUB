@@ -105,8 +105,9 @@
     },
     {
       "name": "Astronomy Club",
-      "description": "description",
-      "image": ""
+      "description": "Unveil the wonders of physics",
+      "image": "study/Astronomy_Club/Astronomy_Club logo.jpg",
+      "text_address": "../study/Astronomy_Club/Astronomy_Club info_en.html"
     },
     {
       "name": "Chemistry Club",
