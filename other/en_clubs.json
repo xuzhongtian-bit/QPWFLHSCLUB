@@ -117,6 +117,12 @@
       "description": "With sweat doth we water passion’s root; by toil and temper is young growth made stout.",
       "image": "../activity/table_tennis_club/table_tennis_club logo.jpg",
       "text_address": "../activity/table_tennis_club/table_tennis_club info_en.html"
+    },
+    {
+      "name": "Golf Club",
+      "description": "Swing with Grace, Lead with Vision.",
+      "image": "",
+      "text_address":"../activity/golf_club/golf_club info_en.html"
     }
   ],
   "S": [
