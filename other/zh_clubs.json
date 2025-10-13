@@ -123,6 +123,12 @@
         "description": "挥杆之间，尽显风度",
         "image": "",
         "text_address":"../activity/golf_club/golf_club info.html"
+      },
+      {
+        "name": "揉面不emo烘焙社",
+        "description": "揉面团，让“低落”消散",
+        "image": "",
+        "text_address": "activity/bakery_club/bakery_club.html"
       }
     ],
     "S": [
