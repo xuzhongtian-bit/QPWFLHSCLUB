@@ -123,6 +123,12 @@
       "description": "Swing with Grace, Lead with Vision.",
       "image": "",
       "text_address":"../activity/golf_club/golf_club info_en.html"
+    },
+    {
+      "name": "Bakery Club",
+      "description": "Knead dough, make the \"low\" go.",
+      "image": "",
+      "text_address": "../activity/bakery_club/bakery_club_en.html"
     }
   ],
   "S": [
