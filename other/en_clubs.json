@@ -121,7 +121,7 @@
     {
       "name": "Golf Club",
       "description": "Swing with Grace, Lead with Vision.",
-      "image": "",
+      "image": "../activity/golf_club/golf_club_logo.jpg",
       "text_address":"../activity/golf_club/golf_club info_en.html"
     }
   ],
